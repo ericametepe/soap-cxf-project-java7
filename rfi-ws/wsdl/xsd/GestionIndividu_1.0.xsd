@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:agefospme:rfi:GestionIndividu:1.0"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="urn:agefospme:rfi:GestionIndividu:1.0"
+	elementFormDefault="qualified">
+
+
+
+
+	<xs:complexType name="addresse">
+		<xs:sequence>
+			<xs:element name="adresseLigne1" type="string"></xs:element>
+			<xs:element name="adresseLigne2" type="string" minOccurs="0"
+				maxOccurs="1"></xs:element>
+			<xs:element name="adresseLigne3" type="string" minOccurs="0"
+				maxOccurs="1"></xs:element>
+
+			<xs:element name="codePostal" type="string"></xs:element>
+			<xs:element name="ville" type="string"></xs:element>
+			<xs:element name="pays" type="string"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+
+
+	<xs:element name="consulterIndividuParIdentifiantMetierRequest"
+		type="tns:ConsulterIndividuParIdentifiantMetierRequest"></xs:element>
+
+	<xs:element name="consulterIndividuParIdentifiantMetierResponse"
+		type="tns:ConsulterIndividuParIdentifiantMetierResponse"></xs:element>
+
+	<xs:complexType name="ConsulterIndividuParIdentifiantMetierRequest">
+		<xs:sequence maxOccurs="1" minOccurs="1">
+			<xs:element name="identifiantMetier" minOccurs="1"
+				maxOccurs="1">
+				<simpleType>
+					<restriction base="string">
+						<minLength value="8"></minLength>
+					</restriction>
+				</simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+
+
+	<complexType name="ConsulterIndividuParIdentifiantMetierResponse">
+		<xs:sequence>
+			<xs:element name="idMetier" type="string"></xs:element>
+			<xs:element name="nomDeNaissance" type="string"></xs:element>
+			<xs:element name="prenom" type="string"></xs:element>
+			<xs:element name="civilite" type="string"></xs:element>
+			<xs:element name="dateDeNaissance" type="date"></xs:element>
+			<xs:element name="situationProfessionnelle" type="string"></xs:element>
+			<xs:element name="adresseDeDomiciliation" type="tns:addresse"></xs:element>
+			<xs:element name="rattachementCPF" type="boolean"></xs:element>
+			<xs:element name="email" type="string" maxOccurs="1"
+				minOccurs="0"></xs:element>
+			<xs:element name="telephone" type="string" maxOccurs="1"
+				minOccurs="0"></xs:element>
+		</xs:sequence>
+
+
+	</complexType>
+
+
+
+
+	<xs:simpleType name="nir">
+		<restriction base="string">
+			<length value="13"></length>
+		</restriction>
+	</xs:simpleType>
+
+	<element name="ConsulterIndividuParNirEtNomDeNaissanceRequest"
+		type="tns:ConsulterIndividuParNirEtNomDeNaissanceRequest">
+	</element>
+
+	<complexType name="ConsulterIndividuParNirEtNomDeNaissanceRequest">
+		<sequence>
+
+			<element name="nir" type="tns:nir">
+			</element>
+			<element name="nomDeNaissance" type="string"></element>
+		</sequence>
+	</complexType>
+
+	<element name="consulterIndividuParNirEtNomDeNaissanceResponse"
+		type="tns:ConsulterIndividuParNirEtNomDeNaissanceResponse">
+	</element>
+
+	<complexType name="ConsulterIndividuParNirEtNomDeNaissanceResponse">
+		<sequence>
+			<xs:element name="idMetier" type="string"></xs:element>
+			<xs:element name="nomDeNaissance" type="string"></xs:element>
+			<xs:element name="prenom" type="string"></xs:element>
+			<xs:element name="civilite" type="string"></xs:element>
+			<xs:element name="dateDeNaissance" type="date"></xs:element>
+			<xs:element name="situationProfessionnelle" type="string"></xs:element>
+			<xs:element name="adresseDeDomiciliation" type="tns:addresse"></xs:element>
+			<xs:element name="rattachementCPF" type="boolean"></xs:element>
+			<xs:element name="email" type="string" maxOccurs="1" minOccurs="0"></xs:element>
+			<xs:element name="telephone" type="string" maxOccurs="1" minOccurs="0"></xs:element>
+		</sequence>
+	</complexType>
+
+	<element name="creerIndividuRequest" type="tns:CreerIndividuRequest">
+	</element>
+
+	<complexType name="CreerIndividuRequest">
+		<sequence>
+			<xs:element name="nir" type="string"></xs:element>
+			<xs:element name="nomDeNaissance" type="string"></xs:element>
+			<xs:element name="prenom" type="string"></xs:element>
+			<xs:element name="civilite" type="string"></xs:element>
+			<xs:element name="dateDeNaissance" type="date"></xs:element>
+			<xs:element name="situationProfessionnelle" type="string"></xs:element>
+			<xs:element name="email" type="string" maxOccurs="1"
+				minOccurs="0"></xs:element>
+			<xs:element name="telephone" type="string" maxOccurs="1"
+				minOccurs="0"></xs:element>
+			<xs:element name="rattachementCPF" type="boolean"></xs:element>
+			<xs:element name="adresseDeDomiciliation" type="tns:addresse"></xs:element>
+		</sequence>
+	</complexType>
+
+	<element name="CreerIndividuResponse" type="tns:CreerIndividuResponse">
+	</element>
+
+	<complexType name="CreerIndividuResponse">
+		<sequence>
+			<xs:element name="idMetier" type="string"></xs:element>
+			<xs:element name="nomDeNaissance" type="string"></xs:element>
+			<xs:element name="prenom" type="string"></xs:element>
+			<xs:element name="civilite" type="string"></xs:element>
+			<xs:element name="dateDeNaissance" type="date"></xs:element>
+			<xs:element name="situationProfessionnelle" type="string"></xs:element>
+			<xs:element name="adresseDeDomiciliation" type="tns:addresse"></xs:element>
+			<xs:element name="email" type="string" minOccurs="0"
+				maxOccurs="1" />
+			<xs:element name="telephone" type="string" minOccurs="0"
+				maxOccurs="1" />
+			<xs:element name="rattachementCPF" type="boolean"></xs:element>
+		</sequence>
+	</complexType>
+
+	<element name="modifierIndividuRequest" type="tns:ModifierIndividuRequest">
+	</element>
+
+	<complexType name="ModifierIndividuRequest">
+		<sequence>
+			<xs:element name="idMetier" type="string"></xs:element>
+			<xs:element name="nomDeNaissance" type="string"></xs:element>
+			<xs:element name="prenom" type="string"></xs:element>
+			<xs:element name="civilite" type="string"></xs:element>
+			<xs:element name="dateDeNaissance" type="date"></xs:element>
+			<xs:element name="situationProfessionnelle" type="string"></xs:element>
+			<xs:element name="adresseDeDomiciliation" type="tns:addresse"></xs:element>
+			<xs:element name="email" type="string" minOccurs="0" maxOccurs="1"></xs:element>
+			<xs:element name="telephone" type="string" minOccurs="0" maxOccurs="1"></xs:element>
+			<xs:element name="rattachementCPF" type="boolean"></xs:element>
+		</sequence>
+	</complexType>
+
+	<element name="modifierIndividuResponse" type="tns:ModifierIndividuResponse">
+	</element>
+
+	<complexType name="ModifierIndividuResponse">
+		<sequence>
+			<xs:element name="idMetier" type="string"></xs:element>
+			<xs:element name="nomDeNaissance" type="string"></xs:element>
+			<xs:element name="prenom" type="string"></xs:element>
+			<xs:element name="civilite" type="string"></xs:element>
+			<xs:element name="dateDeNaissance" type="date"></xs:element>
+			<xs:element name="situationProfessionnelle" type="string"></xs:element>
+			<xs:element name="adresseDeDomiciliation" type="tns:addresse"></xs:element>
+			<xs:element name="rattachementCPF" type="boolean"></xs:element>
+			<xs:element name="email" type="string" minOccurs="0" maxOccurs="1"></xs:element>
+			<xs:element name="telephone" type="string" minOccurs="0" maxOccurs="1"> </xs:element>
+		</sequence>
+	</complexType>
+
+
+</schema>

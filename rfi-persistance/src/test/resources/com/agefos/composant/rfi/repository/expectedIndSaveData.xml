@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+	<Individu id="0" nir="1234567891236" civilite="MONSIEUR"
+		nomDeNaissance="DUPONT" prenom="TAXAN" situationProfessionnelle="Salarie"
+		adresse="18 rue du 8 mai 1945" codePostal="93100" ville="PARIS" pays="FRANCE"
+		telephone="1234567890" email="ykodjo@yahoo.fr" siteAgefosDeCreation="siteAgefosDeCreation" login="login"  />
+		
+	</dataset>

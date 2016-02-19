@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	targetNamespace="urn:agefospme:rfi:GestionIndividu:1.0"
+	xmlns:tns="urn:agefospme:rfi:GestionIndividu:1.0" xmlns:err="urn:agefospme:commun:Erreur"
+	xmlns:hdr="urn:agefospme:commun:ContexteUtilisateur" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/02/addressing/wsdl">
+	<wsdl:types>
+
+		<xs:schema>
+
+			<xs:import namespace="urn:agefospme:rfi:GestionIndividu:1.0"
+				schemaLocation="xsd/GestionIndividu_1.0.xsd">
+			</xs:import>
+
+			<xs:import namespace="urn:agefospme:commun:Erreur"
+				schemaLocation="xsd/erreur_1.0.xsd">
+			</xs:import>
+
+			<xs:import namespace="urn:agefospme:commun:ContexteUtilisateur"
+				schemaLocation="xsd/ContexteUtilisateur_1.0.xsd"></xs:import>
+
+		</xs:schema>
+
+	</wsdl:types>
+
+
+
+	<!-- Creer individu operation messages -->
+
+	<wsdl:message name="creerIndividuRequest">
+		<wsdl:part element="hdr:contexteUtilisateur" name="headerRFI" />
+		<wsdl:part element="tns:creerIndividuRequest" name="creerIndividuRequest">
+		</wsdl:part>
+	</wsdl:message>
+
+
+	<wsdl:message name="creerIndividuResponse">
+		<wsdl:part element="hdr:contexteUtilisateur" name="headerRFI" />
+		<wsdl:part element="tns:CreerIndividuResponse" name="creerIndividuResponse">
+		</wsdl:part>
+	</wsdl:message>
+
+
+	<wsdl:message name="creerIndividuFault">
+		<wsdl:part name="fault" element="err:erreur"></wsdl:part>
+	</wsdl:message>
+
+
+
+
+	<!-- Message de l'operation : consulterIndividuParIdentifiantMetier -->
+
+
+	<wsdl:message name="consulterIndividuParIdentifiantMetierRequest">
+		<wsdl:part element="tns:consulterIndividuParIdentifiantMetierRequest"
+			name="consulterIndividuParIdentifiantMetierRequest">
+		</wsdl:part>
+	</wsdl:message>
+
+	<wsdl:message name="consulterIndividuParIdentifiantMetierResponse">
+		<wsdl:part element="tns:consulterIndividuParIdentifiantMetierResponse"
+			name="consulterIndividuParIdentifiantMetierResponse"/>
+	</wsdl:message>
+
+
+
+	<wsdl:message name="consulterIndividuParIdentifiantMetierFault">
+		<wsdl:part name="fault" element="err:erreur"></wsdl:part>
+	</wsdl:message>
+
+
+
+
+	<!-- consulter IndividuParNirEtNomDeNaissanceResponse messages -->
+
+
+	<wsdl:message name="consulterIndividuParNirEtNomDeNaissanceRequest">
+		<wsdl:part element="tns:ConsulterIndividuParNirEtNomDeNaissanceRequest"
+			name="consulterIndividuParNirEtNomDeNaissanceRequest">
+		</wsdl:part>
+	</wsdl:message>
+
+
+	<wsdl:message name="consulterIndividuParNirEtNomDeNaissanceResponse">
+		<wsdl:part element="tns:consulterIndividuParNirEtNomDeNaissanceResponse"
+			name="consulterIndividuParNirEtNomDeNaissanceResponse">
+		</wsdl:part>
+	</wsdl:message>
+
+
+
+	<wsdl:message name="consulterIndividuParNirEtNomDeNaissanceFault">
+		<wsdl:part name="fault" element="err:erreur"></wsdl:part>
+	</wsdl:message>
+
+	<!-- Messages modifierIndividuRequest -->
+
+
+
+
+	<wsdl:message name="modifierIndividuRequest">
+		<wsdl:part element="hdr:contexteUtilisateur" name="headerRFI" />
+		<wsdl:part element="tns:modifierIndividuRequest" name="modifierIndividuRequest">
+		</wsdl:part>
+	</wsdl:message>
+
+
+	<wsdl:message name="modifierIndividuResponse">
+		<wsdl:part element="tns:modifierIndividuResponse" name="modifierIndividuResponse">
+		</wsdl:part>
+	</wsdl:message>
+
+	<wsdl:message name="modifierIndividuFault">
+		<wsdl:part name="fault" element="err:erreur"></wsdl:part>
+	</wsdl:message>
+
+
+
+
+	<wsdl:portType name="GestionIndividuPortType">
+		<wsdl:operation name="modifierIndividu">
+			<wsdl:input message="tns:modifierIndividuRequest" name="modifierIndividuRequest"
+				wsaw:Action="urn:agefospme:GestionIndividu:1.0:modifierIndividu" />
+
+			<wsdl:output message="tns:modifierIndividuResponse" name="modifierIndividuResponse"
+				wsaw:Action="urn:agefospme:GestionIndividu:1.0:modifierIndividu" />
+
+			<wsdl:fault name="modifierIndividuFault" message="tns:modifierIndividuFault" />
+		</wsdl:operation>
+
+		<wsdl:operation name="consulterIndividuParNirEtNomDeNaissance">
+			<wsdl:input message="tns:consulterIndividuParNirEtNomDeNaissanceRequest"
+				name="consulterIndividuParNirEtNomDeNaissanceRequest"
+				wsaw:Action="urn:agefospme:GestionIndividu:1.0:consulterIndividuParNirEtNomDeNaissance">
+			</wsdl:input>
+
+
+			<wsdl:output message="tns:consulterIndividuParNirEtNomDeNaissanceResponse"
+				name="consulterIndividuParNirEtNomDeNaissanceResponse"
+				wsaw:Action="urn:agefospme:GestionIndividu:1.0:consulterIndividuParNirEtNomDeNaissanceResponse">
+			</wsdl:output>
+
+			<wsdl:fault name="consulterIndividuParNirEtNomDeNaissanceFault"
+				message="tns:consulterIndividuParNirEtNomDeNaissanceFault">
+			</wsdl:fault>
+
+		</wsdl:operation>
+
+
+
+		<wsdl:operation name="creerIndividu">
+			<wsdl:input message="tns:creerIndividuRequest" name="creerIndividuRequest"
+				wsaw:Action="urn:agefospme:GestionIndividu:1.0:creerIndividu" />
+
+			<wsdl:output message="tns:creerIndividuResponse" name="creerIndividuResponse"
+				wsaw:Action="urn:agefospme:GestionIndividu:1.0:creerIndividu" />
+
+			<wsdl:fault name="creerIndividuFault" message="tns:creerIndividuFault" />
+
+		</wsdl:operation>
+
+
+		<wsdl:operation name="consulterIndividuParIdentifiantMetier">
+			<wsdl:input message="tns:consulterIndividuParIdentifiantMetierRequest"
+				name="consulterIndividuParIdentifiantMetier"
+				wsaw:Action="urn:agefospme:GestionIndividu:1.0:consulterIndividuParIdentifiantMetier" />
+
+			<wsdl:output message="tns:consulterIndividuParIdentifiantMetierResponse"
+				name="consulterIndividuParIdentifiantMetierResponse"
+				wsaw:Action="urn:agefospme:GestionIndividu:1.0:consulterIndividuParIdentifiantMetier">
+
+			</wsdl:output>
+
+			<wsdl:fault name="consulterIndividuParIdentifiantMetierFault"
+				message="tns:consulterIndividuParIdentifiantMetierFault" />
+		</wsdl:operation>
+	</wsdl:portType>
+
+
+	<wsdl:binding name="GestionIndividuBinding"
+		type="tns:GestionIndividuPortType">
+		<soap12:binding style="document"
+			transport="http://www.w3.org/2003/05/soap/bindings/HTTP/" />
+		<wsaw:UsingAddressing wsdl:required="true" />
+
+
+		<wsdl:operation name="consulterIndividuParNirEtNomDeNaissance">
+
+			<wsdl:input name="consulterIndividuParNirEtNomDeNaissanceRequest"
+				wsaw:Action="urn:agefospme:GestionIndividu:1.0:consulterIndividuParNirEtNomDeNaissance">
+				
+			</wsdl:input>
+
+
+			<wsdl:output name="consulterIndividuParNirEtNomDeNaissanceResponse"
+				wsaw:Action="urn:agefospme:GestionIndividu:1.0:consulterIndividuParNirEtNomDeNaissanceResponse">
+				
+			</wsdl:output>
+
+			<wsdl:fault name="consulterIndividuParNirEtNomDeNaissanceFault" />
+
+		</wsdl:operation>
+
+
+
+
+		<wsdl:operation name="creerIndividu">
+			<wsdl:input name="creerIndividuRequest"
+				wsaw:Action="urn:agefospme:GestionIndividu:1.0:creerIndividu">
+
+				<soap12:body parts="tns:creerIndividuRequest" use="literal" />
+				<soap12:header use="literal" part="headerRFI"
+					message="tns:creerIndividuRequest" />
+			</wsdl:input>
+
+
+			<wsdl:output name="creerIndividuResponse"
+				wsaw:Action="urn:agefospme:GestionIndividu:1.0:creerIndividu" />
+
+
+			<wsdl:fault name="creerIndividuFault" />
+
+		</wsdl:operation>
+
+
+		<wsdl:operation name="consulterIndividuParIdentifiantMetier">
+
+			<wsdl:input name="consulterIndividuParIdentifiantMetier"
+				wsaw:Action="urn:agefospme:GestionIndividu:1.0:consulterIndividuParIdentifiantMetier" />
+
+			<wsdl:output name="consulterIndividuParIdentifiantMetierResponse"
+				wsaw:Action="urn:agefospme:GestionIndividu:1.0:consulterIndividuParIdentifiantMetier">
+
+			</wsdl:output>
+
+			<wsdl:fault name="consulterIndividuParIdentifiantMetierFault" />
+		</wsdl:operation>
+
+		<wsdl:operation name="modifierIndividu">
+			<wsdl:input name="modifierIndividuRequest"
+				wsaw:Action="urn:agefospme:GestionIndividu:1.0:modifierIndividu">
+				<soap12:body parts="tns:modifierIndividuRequest" use="literal" />
+				<soap12:header use="literal" part="headerRFI"
+					message="tns:modifierIndividuRequest" />
+			</wsdl:input>
+
+			<wsdl:output name="modifierIndividuResponse"
+				wsaw:Action="urn:agefospme:GestionIndividu:1.0:modifierIndividu">
+			</wsdl:output>
+
+
+			<wsdl:fault name="modifierIndividuFault" />
+
+		</wsdl:operation>
+
+	</wsdl:binding>
+
+
+
+	<wsdl:service name="GestionIndividu">
+		<wsdl:port name="GestionIndividuPort" binding="tns:GestionIndividuBinding">
+			<soap12:address
+				location="http://localhost:8080/services/GestionIndividu" />
+		</wsdl:port>
+	</wsdl:service>
+
+</wsdl:definitions>

@@ -1,0 +1,5 @@
+javax.validation.constraints.Size.message=Taille de la chaine invalide
+javax.validation.constraints.NotNull.message=Champ obligatoire manquant
+Size.IndividuInfoCreationDto.nir.custom=chaine de 13 caracteres
+javax.validation.constraints.NotBlank.message=Espace blanc non autorise.
+NotBlank.IndividuInfoModificationDto.telephone.custom=Espace blanc non autorise

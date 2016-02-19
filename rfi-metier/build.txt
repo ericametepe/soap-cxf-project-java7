@@ -1,0 +1,865 @@
+Apache Maven 3.2.5 (12a6b3acb947671f09b81f49094c53f426d8cea1; 2014-12-14T18:29:23+01:00)
+Maven home: C:\tools\maven-3.2.5\bin\..
+Java version: 1.7.0_76, vendor: Oracle Corporation
+Java home: C:\tools\Java\jdk1.7.0_76\jre
+Default locale: fr_FR, platform encoding: Cp1252
+OS name: "windows 7", version: "6.1", arch: "amd64", family: "windows"
+[INFO] Error stacktraces are turned on.
+[DEBUG] Reading global settings from C:\tools\maven-3.2.5\bin\..\conf\settings.xml
+[DEBUG] Reading user settings from d:\Profiles\ykodjovi\.m2\settings.xml
+[DEBUG] Using local repository at d:\Profiles\ykodjovi\.m2\repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for d:\Profiles\ykodjovi\.m2\repository
+[INFO] Scanning for projects...
+[DEBUG] Extension realms for project fr.agefospme.rfi:rfi-metier:jar:0.0.1-SNAPSHOT: (none)
+[DEBUG] Looking up lifecyle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] Extension realms for project fr.agefospme.rfi:rfi-parent:pom:0.0.1-SNAPSHOT: (none)
+[DEBUG] Looking up lifecyle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: fr.agefospme.rfi:rfi-metier:jar:0.0.1-SNAPSHOT
+[DEBUG] Tasks:   [clean, install]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building rfi composant business layer 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       fr.agefospme.rfi:rfi-metier:0.0.1-SNAPSHOT
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile, runtime, test]
+[DEBUG] Repositories (dependencies): [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] Repositories (plugins)     : [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-clean-plugin:2.5:clean (default-clean)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <directory default-value="${project.build.directory}"/>
+  <excludeDefaultDirectories default-value="false">${clean.excludeDefaultDirectories}</excludeDefaultDirectories>
+  <failOnError default-value="true">${maven.clean.failOnError}</failOnError>
+  <followSymLinks default-value="false">${clean.followSymLinks}</followSymLinks>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <reportDirectory default-value="${project.reporting.outputDirectory}"/>
+  <retryOnError default-value="true">${maven.clean.retryOnError}</retryOnError>
+  <skip default-value="false">${clean.skip}</skip>
+  <testOutputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <verbose>${clean.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.6:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <classpathElements default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution>${mojoExecution}</mojoExecution>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <projectArtifact default-value="${project.artifact}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skipMain>${maven.main.skip}</skipMain>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.5">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.5">${maven.compiler.target}</target>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+  <mavenSession default-value="${session}"/>
+  <session default-value="${session}"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.6:testResources (default-testResources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources default-value="${project.testResources}"/>
+  <session default-value="${session}"/>
+  <skip>${maven.test.skip}</skip>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile (default-testCompile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <classpathElements default-value="${project.testClasspathElements}"/>
+  <compileSourceRoots default-value="${project.testCompileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedTestSourcesDirectory default-value="${project.build.directory}/generated-test-sources/test-annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution>${mojoExecution}</mojoExecution>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skip>${maven.test.skip}</skip>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.5">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.5">${maven.compiler.target}</target>
+  <testSource>${maven.compiler.testSource}</testSource>
+  <testTarget>${maven.compiler.testTarget}</testTarget>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+  <mavenSession default-value="${session}"/>
+  <session default-value="${session}"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-surefire-plugin:2.13:test (default-test)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <argLine>${argLine}</argLine>
+  <basedir default-value="${basedir}"/>
+  <childDelegation default-value="false">${childDelegation}</childDelegation>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <debugForkedProcess>${maven.surefire.debug}</debugForkedProcess>
+  <disableXmlReport default-value="false">${disableXmlReport}</disableXmlReport>
+  <enableAssertions default-value="true">${enableAssertions}</enableAssertions>
+  <excludedGroups>${excludedGroups}</excludedGroups>
+  <excludes>
+    <exclude>**/*ITTest.java</exclude>
+  </excludes>
+  <failIfNoSpecifiedTests>${surefire.failIfNoSpecifiedTests}</failIfNoSpecifiedTests>
+  <failIfNoTests>${failIfNoTests}</failIfNoTests>
+  <forkMode default-value="once">${forkMode}</forkMode>
+  <forkedProcessTimeoutInSeconds>${surefire.timeout}</forkedProcessTimeoutInSeconds>
+  <groups>${groups}</groups>
+  <junitArtifactName default-value="junit:junit">${junitArtifactName}</junitArtifactName>
+  <jvm>${jvm}</jvm>
+  <localRepository default-value="${localRepository}"/>
+  <objectFactory>${objectFactory}</objectFactory>
+  <parallel>${parallel}</parallel>
+  <parallelMavenExecution default-value="${session.parallel}"/>
+  <perCoreThreadCount default-value="true">${perCoreThreadCount}</perCoreThreadCount>
+  <pluginArtifactMap>${plugin.artifactMap}</pluginArtifactMap>
+  <pluginDescriptor default-value="${plugin}"/>
+  <printSummary default-value="true">${surefire.printSummary}</printSummary>
+  <projectArtifactMap>${project.artifactMap}</projectArtifactMap>
+  <redirectTestOutputToFile default-value="false">${maven.test.redirectTestOutputToFile}</redirectTestOutputToFile>
+  <remoteRepositories default-value="${project.pluginArtifactRepositories}"/>
+  <reportFormat default-value="brief">${surefire.reportFormat}</reportFormat>
+  <reportNameSuffix default-value="">${surefire.reportNameSuffix}</reportNameSuffix>
+  <reportsDirectory default-value="${project.build.directory}/surefire-reports"/>
+  <reuseForks default-value="false">${reuseForks}</reuseForks>
+  <runOrder default-value="filesystem"/>
+  <skip default-value="false">${maven.test.skip}</skip>
+  <skipExec>${maven.test.skip.exec}</skipExec>
+  <skipTests default-value="false">${skipTests}</skipTests>
+  <test>${test}</test>
+  <testClassesDirectory default-value="${project.build.testOutputDirectory}"/>
+  <testFailureIgnore default-value="false">${maven.test.failure.ignore}</testFailureIgnore>
+  <testNGArtifactName default-value="org.testng:testng">${testNGArtifactName}</testNGArtifactName>
+  <testSourceDirectory default-value="${project.build.testSourceDirectory}"/>
+  <threadCount>${threadCount}</threadCount>
+  <trimStackTrace default-value="true">${trimStackTrace}</trimStackTrace>
+  <useFile default-value="true">${surefire.useFile}</useFile>
+  <useManifestOnlyJar default-value="true">${surefire.useManifestOnlyJar}</useManifestOnlyJar>
+  <useSystemClassLoader default-value="true">${surefire.useSystemClassLoader}</useSystemClassLoader>
+  <useUnlimitedThreads default-value="false">${useUnlimitedThreads}</useUnlimitedThreads>
+  <workingDirectory>${basedir}</workingDirectory>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-jar-plugin:2.4:jar (default-jar)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <defaultManifestFile default-value="${project.build.outputDirectory}/META-INF/MANIFEST.MF"/>
+  <finalName default-value="${project.build.finalName}">${jar.finalName}</finalName>
+  <forceCreation default-value="false">${jar.forceCreation}</forceCreation>
+  <outputDirectory default-value="${project.build.directory}"/>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+  <skipIfEmpty default-value="false">${jar.skipIfEmpty}</skipIfEmpty>
+  <useDefaultManifestFile default-value="false">${jar.useDefaultManifestFile}</useDefaultManifestFile>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-install-plugin:2.4:install (default-install)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <artifact default-value="${project.artifact}"/>
+  <attachedArtifacts default-value="${project.attachedArtifacts}"/>
+  <createChecksum default-value="false">${createChecksum}</createChecksum>
+  <localRepository>${localRepository}</localRepository>
+  <packaging default-value="${project.packaging}"/>
+  <pomFile default-value="${project.file}"/>
+  <skip default-value="false">${maven.install.skip}</skip>
+  <updateReleaseInfo default-value="false">${updateReleaseInfo}</updateReleaseInfo>
+</configuration>
+[DEBUG] =======================================================================
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=2, ConflictMarker.markTime=0, ConflictMarker.nodeCount=206, ConflictIdSorter.graphTime=1, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=55, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=8, ConflictResolver.conflictItemCount=133, DefaultDependencyCollector.collectTime=287, DefaultDependencyCollector.transformTime=12}
+[DEBUG] fr.agefospme.rfi:rfi-metier:jar:0.0.1-SNAPSHOT
+[DEBUG]    org.springframework:spring-core:jar:4.0.7.RELEASE:compile
+[DEBUG]       commons-logging:commons-logging:jar:1.1.3:compile
+[DEBUG]    org.springframework:spring-beans:jar:4.0.7.RELEASE:compile
+[DEBUG]    org.springframework:spring-context:jar:4.0.7.RELEASE:compile
+[DEBUG]       org.springframework:spring-aop:jar:4.0.7.RELEASE:compile
+[DEBUG]          aopalliance:aopalliance:jar:1.0:compile
+[DEBUG]       org.springframework:spring-expression:jar:4.0.7.RELEASE:compile
+[DEBUG]    org.springframework:spring-context-support:jar:4.0.7.RELEASE:compile
+[DEBUG]    javax.inject:javax.inject:jar:1:compile
+[DEBUG]    org.slf4j:jcl-over-slf4j:jar:1.7.2:compile
+[DEBUG]    org.slf4j:slf4j-api:jar:1.7.2:compile
+[DEBUG]    org.slf4j:jul-to-slf4j:jar:1.7.2:compile
+[DEBUG]    ch.qos.logback:logback-classic:jar:1.0.9:runtime
+[DEBUG]    ch.qos.logback:logback-core:jar:1.0.9:runtime
+[DEBUG]    org.springframework:spring-test:jar:4.0.7.RELEASE:test
+[DEBUG]    junit:junit:jar:4.12:test
+[DEBUG]       org.hamcrest:hamcrest-core:jar:1.3:test
+[DEBUG]    javax.validation:validation-api:jar:1.0.0.GA:compile
+[DEBUG]    joda-time:joda-time:jar:2.2:compile
+[DEBUG]    fr.agefospme.rfi:rfi-persistence:jar:0.0.1-SNAPSHOT:compile
+[DEBUG]       commons-lang:commons-lang:jar:2.6:compile
+[DEBUG]       com.google.guava:guava:jar:18.0:compile
+[DEBUG]       org.jadira.usertype:usertype.core:jar:3.1.0.CR1:compile
+[DEBUG]          org.jadira.usertype:usertype.spi:jar:3.1.0.CR1:compile
+[DEBUG]       org.springframework.data:spring-data-jpa:jar:1.3.2.RELEASE:compile
+[DEBUG]          org.springframework.data:spring-data-commons:jar:1.5.1.RELEASE:compile
+[DEBUG]       org.springframework:spring-jdbc:jar:4.0.7.RELEASE:compile
+[DEBUG]       org.springframework:spring-webmvc:jar:4.0.7.RELEASE:compile
+[DEBUG]          org.springframework:spring-web:jar:4.0.7.RELEASE:compile
+[DEBUG]       org.springframework:spring-tx:jar:4.0.7.RELEASE:compile
+[DEBUG]       org.springframework:spring-orm:jar:4.0.7.RELEASE:compile
+[DEBUG]       org.springframework:spring-oxm:jar:4.0.7.RELEASE:compile
+[DEBUG]       commons-dbcp:commons-dbcp:jar:1.4:runtime
+[DEBUG]          commons-pool:commons-pool:jar:1.5.4:runtime
+[DEBUG]       rome:rome:jar:1.0:compile
+[DEBUG]          jdom:jdom:jar:1.0:compile
+[DEBUG]       joda-time:joda-time-hibernate:jar:1.3:compile
+[DEBUG]       org.hsqldb:hsqldb:jar:2.2.9:runtime
+[DEBUG]       org.hibernate:hibernate-core:jar:4.1.6.Final:compile
+[DEBUG]          antlr:antlr:jar:2.7.7:compile
+[DEBUG]          org.jboss.logging:jboss-logging:jar:3.1.0.GA:compile
+[DEBUG]          org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:jar:1.0.0.Final:compile
+[DEBUG]          dom4j:dom4j:jar:1.6.1:compile
+[DEBUG]          org.javassist:javassist:jar:3.15.0-GA:compile
+[DEBUG]          org.hibernate.common:hibernate-commons-annotations:jar:4.0.1.Final:compile
+[DEBUG]       org.hibernate:hibernate-entitymanager:jar:4.1.6.Final:compile
+[DEBUG]       org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.1.Final:compile
+[DEBUG]       org.hibernate:hibernate-validator:jar:4.3.0.Final:compile
+[DEBUG]       org.hibernate:hibernate-ehcache:jar:4.1.6.Final:compile
+[DEBUG]       net.sf.ehcache:ehcache-core:jar:2.6.5:compile
+[DEBUG]       org.hibernate:hibernate-envers:jar:4.1.6.Final:compile
+[DEBUG]       org.aspectj:aspectjrt:jar:1.7.2:compile
+[DEBUG]       org.aspectj:aspectjweaver:jar:1.7.2:runtime
+[DEBUG]       org.flywaydb:flyway-core:jar:3.0:compile
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ rfi-metier ---
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata < plexus.core
+[DEBUG]   Imported: javax.enterprise.util.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution < plexus.core
+[DEBUG]   Imported: javax.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.installation < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.slf4j.* < plexus.core
+[DEBUG]   Imported: javax.enterprise.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG] Populating class realm maven.api
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=1, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=0, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=12, DefaultDependencyCollector.transformTime=1}
+[DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG]   Included: org.apache.maven.plugins:maven-clean-plugin:jar:2.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.6
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-clean-plugin:2.5:clean from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-clean-plugin:2.5, parent: sun.misc.Launcher$AppClassLoader@79f1a8a]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-clean-plugin:2.5:clean' with basic configurator -->
+[DEBUG]   (f) directory = D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\target
+[DEBUG]   (f) excludeDefaultDirectories = false
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) followSymLinks = false
+[DEBUG]   (f) outputDirectory = D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\target\classes
+[DEBUG]   (f) reportDirectory = D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\target\site
+[DEBUG]   (f) retryOnError = true
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) testOutputDirectory = D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\target\test-classes
+[DEBUG] -- end configuration --
+[INFO] Deleting D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\target
+[INFO] Deleting file D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\target\maven-status\maven-compiler-plugin\compile\default-compile\inputFiles.lst
+[INFO] Deleting file D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\target\maven-status\maven-compiler-plugin\compile\default-compile\createdFiles.lst
+[INFO] Deleting directory D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\target\maven-status\maven-compiler-plugin\compile\default-compile
+[INFO] Deleting directory D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\target\maven-status\maven-compiler-plugin\compile
+[INFO] Deleting directory D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\target\maven-status\maven-compiler-plugin
+[INFO] Deleting directory D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\target\maven-status
+[INFO] Deleting directory D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\target\classes
+[INFO] Deleting directory D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\target
+[DEBUG] Skipping non-existing directory D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\target\classes
+[DEBUG] Skipping non-existing directory D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\target\test-classes
+[DEBUG] Skipping non-existing directory D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\target\site
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ rfi-metier ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=77, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=26, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1, ConflictResolver.conflictItemCount=74, DefaultDependencyCollector.collectTime=81, DefaultDependencyCollector.transformTime=1}
+[DEBUG] org.apache.maven.plugins:maven-resources-plugin:jar:2.6:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.6:compile
+[DEBUG]          org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.6:compile
+[DEBUG]       commons-cli:commons-cli:jar:1.0:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-monitor:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]       junit:junit:jar:3.8.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:2.0.5:compile
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:1.1:compile
+[DEBUG]       org.sonatype.plexus:plexus-build-api:jar:0.0.4:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.13:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:2.6
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.6
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.5
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:1.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.13
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-error-diagnostics:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.0.6
+[DEBUG]   Excluded: classworlds:classworlds:jar:1.1
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-monitor:jar:2.0.6
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.6:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.6, parent: sun.misc.Launcher$AppClassLoader@79f1a8a]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.6:resources' with basic configurator -->
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\target\classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: fr.agefospme.rfi:rfi-metier:0.0.1-SNAPSHOT @ D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\src\main\resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@1beeb6f4
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {file.encoding.pkg=sun.io, env.PROMPT=$P$G, servletApiVersion=3.1.0, jodatime-jsptags.version=1.1.1, env.=D:=D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier, java.home=C:\tools\Java\jdk1.7.0_76\jre, aspectJVersion=1.7.2, jstlVersion=1.2, classworlds.conf=C:\tools\maven-3.2.5\bin\..\bin\m2.conf, slf4jVersion=1.7.5, ehcacheVersion=2.7.4, java.endorsed.dirs=C:\tools\Java\jdk1.7.0_76\jre\lib\endorsed, cxf.version=3.0.4, env.USERNAME=ykodjovi, h2Version=1.4.182, sun.os.patch.level=Service Pack 1, java.vendor.url=http://java.oracle.com/, env.COMPUTERNAME=ITEM-83783, hibernateEntityManagerVersion=4.0.1.Final, java.version=1.7.0_76, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, env.USERPROFILE=d:\Profiles\ykodjovi, env.USERMAIL=yawo.kodjovi@ext.soprasteria.com, user.name=ykodjovi, jspElVersion=2.2.4, sun.io.unicode.encoding=UnicodeLittle, javax.inject.version=1, sun.jnu.encoding=Cp1252, java.runtime.name=Java(TM) SE Runtime Environment, env.LOCALAPPDATA=d:\Profiles\ykodjovi\AppData\Local, env.COMMONPROGRAMW6432=C:\Program Files\Common Files, commons-dbcp.version=1.4, java.specification.name=Java Platform API Specification, jspApiVersion=2.1, user.timezone=Europe/Paris, user.script=, path.separator=;, env.MAVEN_CMD_LINE_ARGS=clean install -e -X, env.PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 60 Stepping 3, GenuineIntel, file.encoding=Cp1252, env.HOME=d:\Profiles\ykodjovi, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher clean install -e -X, env.NUMBER_OF_PROCESSORS=4, env.APPDATA=d:\Profiles\ykodjovi\AppData\Roaming, env.WINDIR=C:\Windows, java.io.tmpdir=d:\Profiles\ykodjovi\AppData\Local\Temp\, user.language=fr, line.separator=
+, guavaVersion=18.0, jodatime.version=2.2, env.COMMONPROGRAMFILES=C:\Program Files\Common Files, hibernateVersion=4.1.6.Final, java.vm.info=mixed mode, sun.desktop=windows, java.vm.specification.name=Java Virtual Machine Specification, project.reporting.outputEncoding=UTF-8, hibernate-validator.version=4.3.0.Final, env.M2_HOME=C:\tools\maven-3.2.5\bin\.., env.PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, env.USERDOMAIN_ROAMINGPROFILE=EMEAAD, env.LOGONSERVER=\\WMTRLDC01, env.PSMODULEPATH=C:\Windows\system32\WindowsPowerShell\v1.0\Modules\, java.awt.printerjob=sun.awt.windows.WPrinterJob, env.PUBLIC=d:\Profiles\Public, env.USERDOMAIN=EMEAAD, env.PROCESSOR_LEVEL=6, ehcache.version=2.6.5, env.PROGRAMFILES(X86)=C:\Program Files (x86), env.=EXITCODE=00000001, os.name=Windows 7, java.specification.vendor=Oracle Corporation, env.TMP=d:\Profiles\ykodjovi\AppData\Local\Temp, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hamcrestVersion=1.3, ehcacheJCacheVersion=1.4.0-beta1, env.OS=Windows_NT, java.library.path=C:\tools\Java\jdk1.7.0_76\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\tools\Java\jdk1.7.0_76\bin;C:\tools\maven-3.2.5\bin;C:\Program Files\TortoiseSVN\bin;., env.PROGRAMW6432=C:\Program Files, env.PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\tools\Java\jdk1.7.0_76\bin;C:\tools\maven-3.2.5\bin;C:\Program Files\TortoiseSVN\bin, java.class.version=51.0, jodatime-hibernate.version=1.3, env.HOMEDRIVE=d:, env.SYSTEMROOT=C:\Windows, spring.version=4.0.7.RELEASE, commonsLangVersion=2.6, log4jVersion=1.2.14, env.COMSPEC=C:\Windows\system32\cmd.exe, sun.boot.library.path=C:\tools\Java\jdk1.7.0_76\jre\bin, project.build.sourceEncoding=UTF-8, env.SYSTEMDRIVE=C:, env.PROCESSOR_REVISION=3c03, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, user.variant=, junit.version=4.12, jboss.as.plugins.version=7.6.Final, env.PROGRAMFILES=C:\Program Files, java.vm.specification.version=1.7, env.MAVEN_JAVA_EXE="C:\tools\Java\jdk1.7.0_76\bin\java.exe", env.PROGRAMDATA=C:\ProgramData, slf4j.version=1.7.2, awt.toolkit=sun.awt.windows.WToolkit, sun.cpu.isalist=amd64, validation.version=1.0.0.GA, java.ext.dirs=C:\tools\Java\jdk1.7.0_76\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, os.version=6.1, env.ERROR_CODE=0, user.home=d:\Profiles\ykodjovi, java.vm.vendor=Oracle Corporation, ha.jdbc.version=3.0.3, env.USERDNSDOMAIN=EMEA.MSAD.SOPRA, env.JAVA_HOME=C:\tools\Java\jdk1.7.0_76, logback.version=1.0.9, user.dir=D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier, env.COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files, env.FP_NO_HOST_CHECK=NO, hibernateValidatorVersion=5.0.1.Final, sun.cpu.endian=little, env.ALLUSERSPROFILE=C:\ProgramData, env.MVN_HOME=C:\tools\maven-3.2.5, env.CLASSWORLDS_LAUNCHER=org.codehaus.plexus.classworlds.launcher.Launcher, env.PROCESSOR_ARCHITECTURE=AMD64, java.vm.version=24.76-b04, java.class.path=C:\tools\maven-3.2.5\bin\..\boot\plexus-classworlds-2.5.2.jar, org.slf4j.simpleLogger.defaultLogLevel=debug, env.HOMEPATH=\Profiles\ykodjovi, env.UATDATA=C:\Windows\CCM\UATData\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77, os.arch=amd64, maven.build.version=Apache Maven 3.2.5 (12a6b3acb947671f09b81f49094c53f426d8cea1; 2014-12-14T18:29:23+01:00), jadira-usertype-core.version=3.1.0.CR1, jetty.webapp.version=8.1.15.v20140411, env.SESSIONNAME=Console, sun.java.launcher=SUN_STANDARD, java.vm.specification.vendor=Oracle Corporation, activeMQVersion=5.7.0, file.separator=\, java.runtime.version=1.7.0_76-b13, sun.boot.class.path=C:\tools\Java\jdk1.7.0_76\jre\lib\resources.jar;C:\tools\Java\jdk1.7.0_76\jre\lib\rt.jar;C:\tools\Java\jdk1.7.0_76\jre\lib\sunrsasign.jar;C:\tools\Java\jdk1.7.0_76\jre\lib\jsse.jar;C:\tools\Java\jdk1.7.0_76\jre\lib\jce.jar;C:\tools\Java\jdk1.7.0_76\jre\lib\charsets.jar;C:\tools\Java\jdk1.7.0_76\jre\lib\jfr.jar;C:\tools\Java\jdk1.7.0_76\jre\classes, maven.version=3.2.5, env.TEMP=d:\Profiles\ykodjovi\AppData\Local\Temp, user.country=FR, maven.home=C:\tools\maven-3.2.5\bin\.., mockitoVersion=1.9.5, hibernate-jpa.version=1.0.1.Final, java.vendor=Oracle Corporation, env.CLASSWORLDS_JAR="C:\tools\maven-3.2.5\bin\..\boot\plexus-classworlds-2.5.2.jar", hsqldb.version=2.2.9, java.specification.version=1.7, sun.arch.data.model=64}
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[DEBUG] resource with targetPath null
+directory D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\src\main\resources
+excludes []
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 0 resource
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ rfi-metier ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1, ConflictMarker.markTime=0, ConflictMarker.nodeCount=160, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=43, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=4, ConflictResolver.conflictItemCount=63, DefaultDependencyCollector.collectTime=169, DefaultDependencyCollector.transformTime=5}
+[DEBUG] org.apache.maven.plugins:maven-compiler-plugin:jar:3.1:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.9:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:1.5.1:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-project:jar:2.0.9:compile
+[DEBUG]          org.apache.maven:maven-plugin-registry:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-monitor:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-toolchain:jar:1.0:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:0.1:compile
+[DEBUG]       com.google.code.findbugs:jsr305:jar:2.0.1:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-incremental:jar:1.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-api:jar:2.2:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-manager:jar:2.2:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-javac:jar:2.2:runtime
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.5.5:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.2:compile
+[DEBUG]       org.apache.xbean:xbean-reflect:jar:3.4:compile
+[DEBUG]          log4j:log4j:jar:1.2.12:compile
+[DEBUG]          commons-logging:commons-logging-api:jar:1.1:compile
+[DEBUG]       com.google.collections:google-collections:jar:1.0:compile
+[DEBUG]       junit:junit:jar:3.8.2:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:3.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:1.5.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:0.1
+[DEBUG]   Included: com.google.code.findbugs:jsr305:jar:2.0.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-incremental:jar:1.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:2.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:2.2
+[DEBUG]   Included: org.apache.xbean:xbean-reflect:jar:3.4
+[DEBUG]   Included: log4j:log4j:jar:1.2.12
+[DEBUG]   Included: commons-logging:commons-logging-api:jar:1.1
+[DEBUG]   Included: com.google.collections:google-collections:jar:1.0
+[DEBUG]   Included: junit:junit:jar:3.8.2
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-error-diagnostics:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-monitor:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-toolchain:jar:1.0
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.5.5
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-classworlds:jar:2.2.2
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.1:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1, parent: sun.misc.Launcher$AppClassLoader@79f1a8a]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.1:compile' with basic configurator -->
+[DEBUG]   (f) basedir = D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier
+[DEBUG]   (f) buildDirectory = D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\target
+[DEBUG]   (f) classpathElements = [D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\target\classes, d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-core\4.0.7.RELEASE\spring-core-4.0.7.RELEASE.jar, d:\Profiles\ykodjovi\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar, d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-beans\4.0.7.RELEASE\spring-beans-4.0.7.RELEASE.jar, d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-context\4.0.7.RELEASE\spring-context-4.0.7.RELEASE.jar, d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-aop\4.0.7.RELEASE\spring-aop-4.0.7.RELEASE.jar, d:\Profiles\ykodjovi\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar, d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-expression\4.0.7.RELEASE\spring-expression-4.0.7.RELEASE.jar, d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-context-support\4.0.7.RELEASE\spring-context-support-4.0.7.RELEASE.jar, d:\Profiles\ykodjovi\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar, d:\Profiles\ykodjovi\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.2\jcl-over-slf4j-1.7.2.jar, d:\Profiles\ykodjovi\.m2\repository\org\slf4j\slf4j-api\1.7.2\slf4j-api-1.7.2.jar, d:\Profiles\ykodjovi\.m2\repository\org\slf4j\jul-to-slf4j\1.7.2\jul-to-slf4j-1.7.2.jar, d:\Profiles\ykodjovi\.m2\repository\javax\validation\validation-api\1.0.0.GA\validation-api-1.0.0.GA.jar, d:\Profiles\ykodjovi\.m2\repository\joda-time\joda-time\2.2\joda-time-2.2.jar, d:\Profiles\ykodjovi\.m2\repository\fr\agefospme\rfi\rfi-persistence\0.0.1-SNAPSHOT\rfi-persistence-0.0.1-SNAPSHOT.jar, d:\Profiles\ykodjovi\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar, d:\Profiles\ykodjovi\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar, d:\Profiles\ykodjovi\.m2\repository\org\jadira\usertype\usertype.core\3.1.0.CR1\usertype.core-3.1.0.CR1.jar, d:\Profiles\ykodjovi\.m2\repository\org\jadira\usertype\usertype.spi\3.1.0.CR1\usertype.spi-3.1.0.CR1.jar, d:\Profiles\ykodjovi\.m2\repository\org\springframework\data\spring-data-jpa\1.3.2.RELEASE\spring-data-jpa-1.3.2.RELEASE.jar, d:\Profiles\ykodjovi\.m2\repository\org\springframework\data\spring-data-commons\1.5.1.RELEASE\spring-data-commons-1.5.1.RELEASE.jar, d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-jdbc\4.0.7.RELEASE\spring-jdbc-4.0.7.RELEASE.jar, d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-webmvc\4.0.7.RELEASE\spring-webmvc-4.0.7.RELEASE.jar, d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-web\4.0.7.RELEASE\spring-web-4.0.7.RELEASE.jar, d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-tx\4.0.7.RELEASE\spring-tx-4.0.7.RELEASE.jar, d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-orm\4.0.7.RELEASE\spring-orm-4.0.7.RELEASE.jar, d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-oxm\4.0.7.RELEASE\spring-oxm-4.0.7.RELEASE.jar, d:\Profiles\ykodjovi\.m2\repository\rome\rome\1.0\rome-1.0.jar, d:\Profiles\ykodjovi\.m2\repository\jdom\jdom\1.0\jdom-1.0.jar, d:\Profiles\ykodjovi\.m2\repository\joda-time\joda-time-hibernate\1.3\joda-time-hibernate-1.3.jar, d:\Profiles\ykodjovi\.m2\repository\org\hibernate\hibernate-core\4.1.6.Final\hibernate-core-4.1.6.Final.jar, d:\Profiles\ykodjovi\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar, d:\Profiles\ykodjovi\.m2\repository\org\jboss\logging\jboss-logging\3.1.0.GA\jboss-logging-3.1.0.GA.jar, d:\Profiles\ykodjovi\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.1_spec\1.0.0.Final\jboss-transaction-api_1.1_spec-1.0.0.Final.jar, d:\Profiles\ykodjovi\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar, d:\Profiles\ykodjovi\.m2\repository\org\javassist\javassist\3.15.0-GA\javassist-3.15.0-GA.jar, d:\Profiles\ykodjovi\.m2\repository\org\hibernate\common\hibernate-commons-annotations\4.0.1.Final\hibernate-commons-annotations-4.0.1.Final.jar, d:\Profiles\ykodjovi\.m2\repository\org\hibernate\hibernate-entitymanager\4.1.6.Final\hibernate-entitymanager-4.1.6.Final.jar, d:\Profiles\ykodjovi\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.0-api\1.0.1.Final\hibernate-jpa-2.0-api-1.0.1.Final.jar, d:\Profiles\ykodjovi\.m2\repository\org\hibernate\hibernate-validator\4.3.0.Final\hibernate-validator-4.3.0.Final.jar, d:\Profiles\ykodjovi\.m2\repository\org\hibernate\hibernate-ehcache\4.1.6.Final\hibernate-ehcache-4.1.6.Final.jar, d:\Profiles\ykodjovi\.m2\repository\net\sf\ehcache\ehcache-core\2.6.5\ehcache-core-2.6.5.jar, d:\Profiles\ykodjovi\.m2\repository\org\hibernate\hibernate-envers\4.1.6.Final\hibernate-envers-4.1.6.Final.jar, d:\Profiles\ykodjovi\.m2\repository\org\aspectj\aspectjrt\1.7.2\aspectjrt-1.7.2.jar, d:\Profiles\ykodjovi\.m2\repository\org\flywaydb\flyway-core\3.0\flyway-core-3.0.jar]
+[DEBUG]   (f) compileSourceRoots = [D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\src\main\java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedSourcesDirectory = D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\target\generated-sources\annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.1:compile {execution: default-compile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\target\classes
+[DEBUG]   (f) projectArtifact = fr.agefospme.rfi:rfi-metier:jar:0.0.1-SNAPSHOT
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.5
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (f) target = 1.5
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG]   (f) mavenSession = org.apache.maven.execution.MavenSession@1beeb6f4
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@1beeb6f4
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Source directories: [D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\src\main\java]
+[DEBUG] Classpath: [D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\target\classes
+ d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-core\4.0.7.RELEASE\spring-core-4.0.7.RELEASE.jar
+ d:\Profiles\ykodjovi\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar
+ d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-beans\4.0.7.RELEASE\spring-beans-4.0.7.RELEASE.jar
+ d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-context\4.0.7.RELEASE\spring-context-4.0.7.RELEASE.jar
+ d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-aop\4.0.7.RELEASE\spring-aop-4.0.7.RELEASE.jar
+ d:\Profiles\ykodjovi\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar
+ d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-expression\4.0.7.RELEASE\spring-expression-4.0.7.RELEASE.jar
+ d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-context-support\4.0.7.RELEASE\spring-context-support-4.0.7.RELEASE.jar
+ d:\Profiles\ykodjovi\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar
+ d:\Profiles\ykodjovi\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.2\jcl-over-slf4j-1.7.2.jar
+ d:\Profiles\ykodjovi\.m2\repository\org\slf4j\slf4j-api\1.7.2\slf4j-api-1.7.2.jar
+ d:\Profiles\ykodjovi\.m2\repository\org\slf4j\jul-to-slf4j\1.7.2\jul-to-slf4j-1.7.2.jar
+ d:\Profiles\ykodjovi\.m2\repository\javax\validation\validation-api\1.0.0.GA\validation-api-1.0.0.GA.jar
+ d:\Profiles\ykodjovi\.m2\repository\joda-time\joda-time\2.2\joda-time-2.2.jar
+ d:\Profiles\ykodjovi\.m2\repository\fr\agefospme\rfi\rfi-persistence\0.0.1-SNAPSHOT\rfi-persistence-0.0.1-SNAPSHOT.jar
+ d:\Profiles\ykodjovi\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar
+ d:\Profiles\ykodjovi\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar
+ d:\Profiles\ykodjovi\.m2\repository\org\jadira\usertype\usertype.core\3.1.0.CR1\usertype.core-3.1.0.CR1.jar
+ d:\Profiles\ykodjovi\.m2\repository\org\jadira\usertype\usertype.spi\3.1.0.CR1\usertype.spi-3.1.0.CR1.jar
+ d:\Profiles\ykodjovi\.m2\repository\org\springframework\data\spring-data-jpa\1.3.2.RELEASE\spring-data-jpa-1.3.2.RELEASE.jar
+ d:\Profiles\ykodjovi\.m2\repository\org\springframework\data\spring-data-commons\1.5.1.RELEASE\spring-data-commons-1.5.1.RELEASE.jar
+ d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-jdbc\4.0.7.RELEASE\spring-jdbc-4.0.7.RELEASE.jar
+ d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-webmvc\4.0.7.RELEASE\spring-webmvc-4.0.7.RELEASE.jar
+ d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-web\4.0.7.RELEASE\spring-web-4.0.7.RELEASE.jar
+ d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-tx\4.0.7.RELEASE\spring-tx-4.0.7.RELEASE.jar
+ d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-orm\4.0.7.RELEASE\spring-orm-4.0.7.RELEASE.jar
+ d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-oxm\4.0.7.RELEASE\spring-oxm-4.0.7.RELEASE.jar
+ d:\Profiles\ykodjovi\.m2\repository\rome\rome\1.0\rome-1.0.jar
+ d:\Profiles\ykodjovi\.m2\repository\jdom\jdom\1.0\jdom-1.0.jar
+ d:\Profiles\ykodjovi\.m2\repository\joda-time\joda-time-hibernate\1.3\joda-time-hibernate-1.3.jar
+ d:\Profiles\ykodjovi\.m2\repository\org\hibernate\hibernate-core\4.1.6.Final\hibernate-core-4.1.6.Final.jar
+ d:\Profiles\ykodjovi\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar
+ d:\Profiles\ykodjovi\.m2\repository\org\jboss\logging\jboss-logging\3.1.0.GA\jboss-logging-3.1.0.GA.jar
+ d:\Profiles\ykodjovi\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.1_spec\1.0.0.Final\jboss-transaction-api_1.1_spec-1.0.0.Final.jar
+ d:\Profiles\ykodjovi\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar
+ d:\Profiles\ykodjovi\.m2\repository\org\javassist\javassist\3.15.0-GA\javassist-3.15.0-GA.jar
+ d:\Profiles\ykodjovi\.m2\repository\org\hibernate\common\hibernate-commons-annotations\4.0.1.Final\hibernate-commons-annotations-4.0.1.Final.jar
+ d:\Profiles\ykodjovi\.m2\repository\org\hibernate\hibernate-entitymanager\4.1.6.Final\hibernate-entitymanager-4.1.6.Final.jar
+ d:\Profiles\ykodjovi\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.0-api\1.0.1.Final\hibernate-jpa-2.0-api-1.0.1.Final.jar
+ d:\Profiles\ykodjovi\.m2\repository\org\hibernate\hibernate-validator\4.3.0.Final\hibernate-validator-4.3.0.Final.jar
+ d:\Profiles\ykodjovi\.m2\repository\org\hibernate\hibernate-ehcache\4.1.6.Final\hibernate-ehcache-4.1.6.Final.jar
+ d:\Profiles\ykodjovi\.m2\repository\net\sf\ehcache\ehcache-core\2.6.5\ehcache-core-2.6.5.jar
+ d:\Profiles\ykodjovi\.m2\repository\org\hibernate\hibernate-envers\4.1.6.Final\hibernate-envers-4.1.6.Final.jar
+ d:\Profiles\ykodjovi\.m2\repository\org\aspectj\aspectjrt\1.7.2\aspectjrt-1.7.2.jar
+ d:\Profiles\ykodjovi\.m2\repository\org\flywaydb\flyway-core\3.0\flyway-core-3.0.jar]
+[DEBUG] Output directory: D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\target\classes
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[DEBUG] Stale source detected: D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\src\main\java\fr\agefospme\referentiel\individu\service\ReferentielIndividuServiceManagerImplITTest.java
+[DEBUG] Stale source detected: D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\src\main\java\fr\agefospme\referentiel\individu\service\UtilisateurAgefosDto.java
+[DEBUG] Stale source detected: D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\src\main\java\fr\agefospme\referentiel\individu\service\ReferentielIndividuServiceManagerImpl.java
+[DEBUG] Stale source detected: D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\src\main\java\fr\agefospme\referentiel\individu\service\AdresseDto.java
+[DEBUG] Stale source detected: D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\src\main\java\fr\agefospme\referentiel\individu\service\ReferentielIndividuServiceManager.java
+[DEBUG] Stale source detected: D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\src\main\java\fr\agefospme\referentiel\individu\commun\IndividuInfoCreationDtoToIndividuConverter.java
+[DEBUG] Stale source detected: D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\src\main\java\fr\agefospme\referentiel\individu\service\exception\DuplicateIndividuCreationException.java
+[DEBUG] Stale source detected: D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\src\main\java\fr\agefospme\referentiel\individu\commun\IndividuToIndividuInfoCreationDtoConverter.java
+[DEBUG] Stale source detected: D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\src\main\java\fr\agefospme\referentiel\individu\service\IndividuDto.java
+[DEBUG] Stale source detected: D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\src\main\java\fr\agefospme\referentiel\individu\service\ReferentielIndividuDeletionDto.java
+[DEBUG] Stale source detected: D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\src\main\java\fr\agefospme\referentiel\individu\commun\IndividuToIndividuDtoConverter.java
+[DEBUG] Stale source detected: D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\src\main\java\fr\agefospme\referentiel\individu\service\exception\GestionIndividuErrorMessageAndCode.java
+[DEBUG] Stale source detected: D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\src\main\java\fr\agefospme\referentiel\individu\commun\ValidationService.java
+[DEBUG] Stale source detected: D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\src\main\java\fr\agefospme\referentiel\individu\service\IndividuInfoCreationDto.java
+[DEBUG] Stale source detected: D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\src\main\java\fr\agefospme\referentiel\individu\service\exception\GestionIndividuChampMalFormateException.java
+[INFO] Changes detected - recompiling the module!
+[DEBUG] Classpath:
+[DEBUG]  D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\target\classes
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-core\4.0.7.RELEASE\spring-core-4.0.7.RELEASE.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-beans\4.0.7.RELEASE\spring-beans-4.0.7.RELEASE.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-context\4.0.7.RELEASE\spring-context-4.0.7.RELEASE.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-aop\4.0.7.RELEASE\spring-aop-4.0.7.RELEASE.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-expression\4.0.7.RELEASE\spring-expression-4.0.7.RELEASE.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-context-support\4.0.7.RELEASE\spring-context-support-4.0.7.RELEASE.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.2\jcl-over-slf4j-1.7.2.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\org\slf4j\slf4j-api\1.7.2\slf4j-api-1.7.2.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\org\slf4j\jul-to-slf4j\1.7.2\jul-to-slf4j-1.7.2.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\javax\validation\validation-api\1.0.0.GA\validation-api-1.0.0.GA.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\joda-time\joda-time\2.2\joda-time-2.2.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\fr\agefospme\rfi\rfi-persistence\0.0.1-SNAPSHOT\rfi-persistence-0.0.1-SNAPSHOT.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\org\jadira\usertype\usertype.core\3.1.0.CR1\usertype.core-3.1.0.CR1.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\org\jadira\usertype\usertype.spi\3.1.0.CR1\usertype.spi-3.1.0.CR1.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\org\springframework\data\spring-data-jpa\1.3.2.RELEASE\spring-data-jpa-1.3.2.RELEASE.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\org\springframework\data\spring-data-commons\1.5.1.RELEASE\spring-data-commons-1.5.1.RELEASE.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-jdbc\4.0.7.RELEASE\spring-jdbc-4.0.7.RELEASE.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-webmvc\4.0.7.RELEASE\spring-webmvc-4.0.7.RELEASE.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-web\4.0.7.RELEASE\spring-web-4.0.7.RELEASE.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-tx\4.0.7.RELEASE\spring-tx-4.0.7.RELEASE.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-orm\4.0.7.RELEASE\spring-orm-4.0.7.RELEASE.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-oxm\4.0.7.RELEASE\spring-oxm-4.0.7.RELEASE.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\rome\rome\1.0\rome-1.0.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\jdom\jdom\1.0\jdom-1.0.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\joda-time\joda-time-hibernate\1.3\joda-time-hibernate-1.3.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\org\hibernate\hibernate-core\4.1.6.Final\hibernate-core-4.1.6.Final.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\org\jboss\logging\jboss-logging\3.1.0.GA\jboss-logging-3.1.0.GA.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.1_spec\1.0.0.Final\jboss-transaction-api_1.1_spec-1.0.0.Final.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\org\javassist\javassist\3.15.0-GA\javassist-3.15.0-GA.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\org\hibernate\common\hibernate-commons-annotations\4.0.1.Final\hibernate-commons-annotations-4.0.1.Final.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\org\hibernate\hibernate-entitymanager\4.1.6.Final\hibernate-entitymanager-4.1.6.Final.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.0-api\1.0.1.Final\hibernate-jpa-2.0-api-1.0.1.Final.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\org\hibernate\hibernate-validator\4.3.0.Final\hibernate-validator-4.3.0.Final.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\org\hibernate\hibernate-ehcache\4.1.6.Final\hibernate-ehcache-4.1.6.Final.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\net\sf\ehcache\ehcache-core\2.6.5\ehcache-core-2.6.5.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\org\hibernate\hibernate-envers\4.1.6.Final\hibernate-envers-4.1.6.Final.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\org\aspectj\aspectjrt\1.7.2\aspectjrt-1.7.2.jar
+[DEBUG]  d:\Profiles\ykodjovi\.m2\repository\org\flywaydb\flyway-core\3.0\flyway-core-3.0.jar
+[DEBUG] Source roots:
+[DEBUG]  D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\src\main\java
+[DEBUG] Command line options:
+[DEBUG] -d D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\target\classes -classpath D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\target\classes;d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-core\4.0.7.RELEASE\spring-core-4.0.7.RELEASE.jar;d:\Profiles\ykodjovi\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-beans\4.0.7.RELEASE\spring-beans-4.0.7.RELEASE.jar;d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-context\4.0.7.RELEASE\spring-context-4.0.7.RELEASE.jar;d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-aop\4.0.7.RELEASE\spring-aop-4.0.7.RELEASE.jar;d:\Profiles\ykodjovi\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-expression\4.0.7.RELEASE\spring-expression-4.0.7.RELEASE.jar;d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-context-support\4.0.7.RELEASE\spring-context-support-4.0.7.RELEASE.jar;d:\Profiles\ykodjovi\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;d:\Profiles\ykodjovi\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.2\jcl-over-slf4j-1.7.2.jar;d:\Profiles\ykodjovi\.m2\repository\org\slf4j\slf4j-api\1.7.2\slf4j-api-1.7.2.jar;d:\Profiles\ykodjovi\.m2\repository\org\slf4j\jul-to-slf4j\1.7.2\jul-to-slf4j-1.7.2.jar;d:\Profiles\ykodjovi\.m2\repository\javax\validation\validation-api\1.0.0.GA\validation-api-1.0.0.GA.jar;d:\Profiles\ykodjovi\.m2\repository\joda-time\joda-time\2.2\joda-time-2.2.jar;d:\Profiles\ykodjovi\.m2\repository\fr\agefospme\rfi\rfi-persistence\0.0.1-SNAPSHOT\rfi-persistence-0.0.1-SNAPSHOT.jar;d:\Profiles\ykodjovi\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;d:\Profiles\ykodjovi\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar;d:\Profiles\ykodjovi\.m2\repository\org\jadira\usertype\usertype.core\3.1.0.CR1\usertype.core-3.1.0.CR1.jar;d:\Profiles\ykodjovi\.m2\repository\org\jadira\usertype\usertype.spi\3.1.0.CR1\usertype.spi-3.1.0.CR1.jar;d:\Profiles\ykodjovi\.m2\repository\org\springframework\data\spring-data-jpa\1.3.2.RELEASE\spring-data-jpa-1.3.2.RELEASE.jar;d:\Profiles\ykodjovi\.m2\repository\org\springframework\data\spring-data-commons\1.5.1.RELEASE\spring-data-commons-1.5.1.RELEASE.jar;d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-jdbc\4.0.7.RELEASE\spring-jdbc-4.0.7.RELEASE.jar;d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-webmvc\4.0.7.RELEASE\spring-webmvc-4.0.7.RELEASE.jar;d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-web\4.0.7.RELEASE\spring-web-4.0.7.RELEASE.jar;d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-tx\4.0.7.RELEASE\spring-tx-4.0.7.RELEASE.jar;d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-orm\4.0.7.RELEASE\spring-orm-4.0.7.RELEASE.jar;d:\Profiles\ykodjovi\.m2\repository\org\springframework\spring-oxm\4.0.7.RELEASE\spring-oxm-4.0.7.RELEASE.jar;d:\Profiles\ykodjovi\.m2\repository\rome\rome\1.0\rome-1.0.jar;d:\Profiles\ykodjovi\.m2\repository\jdom\jdom\1.0\jdom-1.0.jar;d:\Profiles\ykodjovi\.m2\repository\joda-time\joda-time-hibernate\1.3\joda-time-hibernate-1.3.jar;d:\Profiles\ykodjovi\.m2\repository\org\hibernate\hibernate-core\4.1.6.Final\hibernate-core-4.1.6.Final.jar;d:\Profiles\ykodjovi\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;d:\Profiles\ykodjovi\.m2\repository\org\jboss\logging\jboss-logging\3.1.0.GA\jboss-logging-3.1.0.GA.jar;d:\Profiles\ykodjovi\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.1_spec\1.0.0.Final\jboss-transaction-api_1.1_spec-1.0.0.Final.jar;d:\Profiles\ykodjovi\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;d:\Profiles\ykodjovi\.m2\repository\org\javassist\javassist\3.15.0-GA\javassist-3.15.0-GA.jar;d:\Profiles\ykodjovi\.m2\repository\org\hibernate\common\hibernate-commons-annotations\4.0.1.Final\hibernate-commons-annotations-4.0.1.Final.jar;d:\Profiles\ykodjovi\.m2\repository\org\hibernate\hibernate-entitymanager\4.1.6.Final\hibernate-entitymanager-4.1.6.Final.jar;d:\Profiles\ykodjovi\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.0-api\1.0.1.Final\hibernate-jpa-2.0-api-1.0.1.Final.jar;d:\Profiles\ykodjovi\.m2\repository\org\hibernate\hibernate-validator\4.3.0.Final\hibernate-validator-4.3.0.Final.jar;d:\Profiles\ykodjovi\.m2\repository\org\hibernate\hibernate-ehcache\4.1.6.Final\hibernate-ehcache-4.1.6.Final.jar;d:\Profiles\ykodjovi\.m2\repository\net\sf\ehcache\ehcache-core\2.6.5\ehcache-core-2.6.5.jar;d:\Profiles\ykodjovi\.m2\repository\org\hibernate\hibernate-envers\4.1.6.Final\hibernate-envers-4.1.6.Final.jar;d:\Profiles\ykodjovi\.m2\repository\org\aspectj\aspectjrt\1.7.2\aspectjrt-1.7.2.jar;d:\Profiles\ykodjovi\.m2\repository\org\flywaydb\flyway-core\3.0\flyway-core-3.0.jar; -sourcepath D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\src\main\java; -g -nowarn -target 1.5 -source 1.5 -encoding UTF-8
+[DEBUG] incrementalBuildHelper#beforeRebuildExecution
+[INFO] Compiling 15 source files to D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-metier\target\classes
+[DEBUG] incrementalBuildHelper#afterRebuildExecution
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[3,24] package org.junit does not exist
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[3,1] static import only from classes and interfaces
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[7,17] package org.junit does not exist
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[8,17] package org.junit does not exist
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[9,17] package org.junit does not exist
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[10,23] package org.junit.rules does not exist
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[12,48] cannot find symbol
+  symbol:   class AbstractCommunTest
+  location: package fr.agefospme.referentiel.individu.commun
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[18,17] cannot find symbol
+  symbol: class AbstractCommunTest
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[27,16] cannot find symbol
+  symbol:   class ExpectedException
+  location: class fr.agefospme.referentiel.individu.service.ReferentielIndividuServiceManagerImplITTest
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[26,10] cannot find symbol
+  symbol:   class Rule
+  location: class fr.agefospme.referentiel.individu.service.ReferentielIndividuServiceManagerImplITTest
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[29,10] cannot find symbol
+  symbol:   class Test
+  location: class fr.agefospme.referentiel.individu.service.ReferentielIndividuServiceManagerImplITTest
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[45,10] cannot find symbol
+  symbol:   class Test
+  location: class fr.agefospme.referentiel.individu.service.ReferentielIndividuServiceManagerImplITTest
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[55,10] cannot find symbol
+  symbol:   class After
+  location: class fr.agefospme.referentiel.individu.service.ReferentielIndividuServiceManagerImplITTest
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[27,43] cannot find symbol
+  symbol:   variable ExpectedException
+  location: class fr.agefospme.referentiel.individu.service.ReferentielIndividuServiceManagerImplITTest
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[31,55] cannot find symbol
+  symbol:   method mockValidInfoCreationDto()
+  location: class fr.agefospme.referentiel.individu.service.ReferentielIndividuServiceManagerImplITTest
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[42,17] cannot find symbol
+  symbol:   method assertTrue(boolean)
+  location: class fr.agefospme.referentiel.individu.service.ReferentielIndividuServiceManagerImplITTest
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[47,55] cannot find symbol
+  symbol:   method mockBadInfoCreationDto()
+  location: class fr.agefospme.referentiel.individu.service.ReferentielIndividuServiceManagerImplITTest
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[52,17] cannot find symbol
+  symbol:   method assertTrue(boolean)
+  location: class fr.agefospme.referentiel.individu.service.ReferentielIndividuServiceManagerImplITTest
+[INFO] 18 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.492 s
+[INFO] Finished at: 2015-03-27T13:09:57+01:00
+[INFO] Final Memory: 17M/228M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project rfi-metier: Compilation failure: Compilation failure:
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[3,24] package org.junit does not exist
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[3,1] static import only from classes and interfaces
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[7,17] package org.junit does not exist
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[8,17] package org.junit does not exist
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[9,17] package org.junit does not exist
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[10,23] package org.junit.rules does not exist
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[12,48] cannot find symbol
+[ERROR] symbol:   class AbstractCommunTest
+[ERROR] location: package fr.agefospme.referentiel.individu.commun
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[18,17] cannot find symbol
+[ERROR] symbol: class AbstractCommunTest
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[27,16] cannot find symbol
+[ERROR] symbol:   class ExpectedException
+[ERROR] location: class fr.agefospme.referentiel.individu.service.ReferentielIndividuServiceManagerImplITTest
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[26,10] cannot find symbol
+[ERROR] symbol:   class Rule
+[ERROR] location: class fr.agefospme.referentiel.individu.service.ReferentielIndividuServiceManagerImplITTest
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[29,10] cannot find symbol
+[ERROR] symbol:   class Test
+[ERROR] location: class fr.agefospme.referentiel.individu.service.ReferentielIndividuServiceManagerImplITTest
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[45,10] cannot find symbol
+[ERROR] symbol:   class Test
+[ERROR] location: class fr.agefospme.referentiel.individu.service.ReferentielIndividuServiceManagerImplITTest
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[55,10] cannot find symbol
+[ERROR] symbol:   class After
+[ERROR] location: class fr.agefospme.referentiel.individu.service.ReferentielIndividuServiceManagerImplITTest
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[27,43] cannot find symbol
+[ERROR] symbol:   variable ExpectedException
+[ERROR] location: class fr.agefospme.referentiel.individu.service.ReferentielIndividuServiceManagerImplITTest
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[31,55] cannot find symbol
+[ERROR] symbol:   method mockValidInfoCreationDto()
+[ERROR] location: class fr.agefospme.referentiel.individu.service.ReferentielIndividuServiceManagerImplITTest
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[42,17] cannot find symbol
+[ERROR] symbol:   method assertTrue(boolean)
+[ERROR] location: class fr.agefospme.referentiel.individu.service.ReferentielIndividuServiceManagerImplITTest
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[47,55] cannot find symbol
+[ERROR] symbol:   method mockBadInfoCreationDto()
+[ERROR] location: class fr.agefospme.referentiel.individu.service.ReferentielIndividuServiceManagerImplITTest
+[ERROR] /D:/Profiles/ykodjovi/workspace/rfi-parent/rfi-metier/src/main/java/fr/agefospme/referentiel/individu/service/ReferentielIndividuServiceManagerImplITTest.java:[52,17] cannot find symbol
+[ERROR] symbol:   method assertTrue(boolean)
+[ERROR] location: class fr.agefospme.referentiel.individu.service.ReferentielIndividuServiceManagerImplITTest
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project rfi-metier: Compilation failure
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:120)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:355)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:155)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:584)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:216)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:160)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.compiler.CompilationFailureException: Compilation failure
+	at org.apache.maven.plugin.compiler.AbstractCompilerMojo.execute(AbstractCompilerMojo.java:858)
+	at org.apache.maven.plugin.compiler.CompilerMojo.execute(CompilerMojo.java:129)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:132)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	... 19 more
+[ERROR] 
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

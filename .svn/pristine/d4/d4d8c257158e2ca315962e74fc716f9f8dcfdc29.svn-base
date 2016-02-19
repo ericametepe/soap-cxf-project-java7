@@ -1,0 +1,17 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	version="1.0">
+	<persistence-unit name="rfi-pu" transaction-type="RESOURCE_LOCAL">
+		<jta-data-source>java:jboss/datasources/rfiDS</jta-data-source>
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>fr.agefospme.rfi.domaine.UtilisateurAgefos</class>
+		<class>fr.agefospme.rfi.domaine.Adresse</class>
+		<class>fr.agefospme.rfi.domaine.IndividuHistorique</class>
+		<class>fr.agefospme.rfi.domaine.Individu</class>
+			<class>fr.agefospme.rfi.domaine.DonneesRFI</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"></property>
+
+		</properties>
+	</persistence-unit>
+</persistence>

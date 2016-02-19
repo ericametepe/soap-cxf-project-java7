@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project activeEnvironment="Default" name="rfi-soapui-test" resourceRoot="" soapui-version="5.0.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="ReferentielIndividuServiceSoapBinding" type="wsdl" bindingName="{http://ws.rfi.webservice.composant.agefos.com/}ReferentielIndividuServiceSoapBinding" soapVersion="1_1" anonymous="optional" definition="http://localhost:8080/rfi/services/rfiservice?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:8080/rfi/services/rfiservice?wsdl"><con:part><con:url>http://localhost:8080/rfi/services/rfiservice?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="ReferentielIndividuService" targetNamespace="http://ws.rfi.webservice.composant.agefos.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://ws.rfi.webservice.composant.agefos.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http">
+  <wsdl:types>
+    <xs:schema elementFormDefault="unqualified" targetNamespace="http://ws.rfi.webservice.composant.agefos.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="consult" type="tns:consult"/>
+      <xs:element name="consultResponse" type="tns:consultResponse"/>
+      <xs:element name="create" type="tns:create"/>
+      <xs:element name="createResponse" type="tns:createResponse"/>
+      <xs:element name="delete" type="tns:delete"/>
+      <xs:element name="deleteResponse" type="tns:deleteResponse"/>
+      <xs:element name="desactivate" type="tns:desactivate"/>
+      <xs:element name="desactivateResponse" type="tns:desactivateResponse"/>
+      <xs:element name="modify" type="tns:modify"/>
+      <xs:element name="modifyResponse" type="tns:modifyResponse"/>
+      <xs:complexType name="modify">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:referentielIndividuModificationRequest"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="referentielIndividuModificationRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="adresse" type="xs:string"/>
+          <xs:element minOccurs="0" name="civilite" type="xs:string"/>
+          <xs:element minOccurs="0" name="codePostal" type="xs:string"/>
+          <xs:element minOccurs="0" name="email" type="xs:string"/>
+          <xs:element minOccurs="0" name="login" type="xs:string"/>
+          <xs:element minOccurs="0" name="nomDeNaissance" type="xs:string"/>
+          <xs:element minOccurs="0" name="pays" type="xs:string"/>
+          <xs:element minOccurs="0" name="prenom" type="xs:string"/>
+          <xs:element minOccurs="0" name="siteAgefosDeCreation" type="xs:string"/>
+          <xs:element minOccurs="0" name="situationProfessionnelle" type="xs:string"/>
+          <xs:element minOccurs="0" name="telephone" type="xs:string"/>
+          <xs:element minOccurs="0" name="ville" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="modifyResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:referentielIndividuModificationResponse"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="referentielIndividuModificationResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="codeRetour" type="xs:string"/>
+          <xs:element minOccurs="0" name="messageRetour" type="xs:string"/>
+          <xs:element minOccurs="0" name="motifEchec" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="desactivate">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:referentielIndividuDesactivationRequest"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="referentielIndividuDesactivationRequest">
+        <xs:sequence/>
+      </xs:complexType>
+      <xs:complexType name="desactivateResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:referentielIndividuDesactivationResponse"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="referentielIndividuDesactivationResponse">
+        <xs:sequence/>
+      </xs:complexType>
+      <xs:complexType name="create">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:referentielIndividuCreationRequest"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="referentielIndividuCreationRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="adresse" type="xs:string"/>
+          <xs:element minOccurs="0" name="civilite" type="xs:string"/>
+          <xs:element minOccurs="0" name="codePostal" type="xs:string"/>
+          <xs:element minOccurs="0" name="email" type="xs:string"/>
+          <xs:element minOccurs="0" name="login" type="xs:string"/>
+          <xs:element minOccurs="0" name="NIR" type="xs:string"/>
+          <xs:element minOccurs="0" name="nomDeNaissance" type="xs:string"/>
+          <xs:element minOccurs="0" name="pays" type="xs:string"/>
+          <xs:element minOccurs="0" name="prenom" type="xs:string"/>
+          <xs:element minOccurs="0" name="siteAgefosDeCreation" type="xs:string"/>
+          <xs:element minOccurs="0" name="situationProfessionnelle" type="xs:string"/>
+          <xs:element minOccurs="0" name="telephone" type="xs:string"/>
+          <xs:element minOccurs="0" name="ville" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="createResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:referentielIndividuCreationResponse"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="referentielIndividuCreationResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="adresse" type="xs:string"/>
+          <xs:element minOccurs="0" name="civilite" type="xs:string"/>
+          <xs:element minOccurs="0" name="codeErreur" type="xs:string"/>
+          <xs:element minOccurs="0" name="codePostal" type="xs:string"/>
+          <xs:element minOccurs="0" name="email" type="xs:string"/>
+          <xs:element minOccurs="0" name="id" type="xs:long"/>
+          <xs:element minOccurs="0" name="nir" type="xs:string"/>
+          <xs:element minOccurs="0" name="nomDeNaissance" type="xs:string"/>
+          <xs:element minOccurs="0" name="pays" type="xs:string"/>
+          <xs:element minOccurs="0" name="prenom" type="xs:string"/>
+          <xs:element minOccurs="0" name="situationProfessionnelle" type="xs:string"/>
+          <xs:element minOccurs="0" name="telephone" type="xs:string"/>
+          <xs:element minOccurs="0" name="ville" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="consult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:referentielIndividuConsultationRequest"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="referentielIndividuConsultationRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="NIR" type="xs:string"/>
+          <xs:element minOccurs="0" name="nom" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="consultResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:referentielIndividuConsultationResponse"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="referentielIndividuConsultationResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="adresse" type="xs:string"/>
+          <xs:element minOccurs="0" name="civilite" type="xs:string"/>
+          <xs:element minOccurs="0" name="codePostal" type="xs:string"/>
+          <xs:element minOccurs="0" name="codeRetour" type="xs:string"/>
+          <xs:element minOccurs="0" name="email" type="xs:string"/>
+          <xs:element minOccurs="0" name="login" type="xs:string"/>
+          <xs:element minOccurs="0" name="messageRetour" type="xs:string"/>
+          <xs:element minOccurs="0" name="NIR" type="xs:string"/>
+          <xs:element minOccurs="0" name="nomDeNaissance" type="xs:string"/>
+          <xs:element minOccurs="0" name="pays" type="xs:string"/>
+          <xs:element minOccurs="0" name="prenom" type="xs:string"/>
+          <xs:element minOccurs="0" name="siteAgefosDeCreation" type="xs:string"/>
+          <xs:element minOccurs="0" name="situationProfessionnelle" type="xs:string"/>
+          <xs:element minOccurs="0" name="telephone" type="xs:string"/>
+          <xs:element minOccurs="0" name="ville" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="delete">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:referentielIndividuDeletionRequest"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="referentielIndividuDeletionRequest">
+        <xs:sequence/>
+      </xs:complexType>
+      <xs:complexType name="deleteResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:referentielIndividuDeletionResponse"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="referentielIndividuDeletionResponse">
+        <xs:sequence/>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="consult">
+    <wsdl:part element="tns:consult" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="desactivateResponse">
+    <wsdl:part element="tns:desactivateResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="create">
+    <wsdl:part element="tns:create" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="modify">
+    <wsdl:part element="tns:modify" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="delete">
+    <wsdl:part element="tns:delete" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="createResponse">
+    <wsdl:part element="tns:createResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="modifyResponse">
+    <wsdl:part element="tns:modifyResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="desactivate">
+    <wsdl:part element="tns:desactivate" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultResponse">
+    <wsdl:part element="tns:consultResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteResponse">
+    <wsdl:part element="tns:deleteResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="ReferentielIndividuService">
+    <wsdl:operation name="modify">
+      <wsdl:input message="tns:modify" name="modify"></wsdl:input>
+      <wsdl:output message="tns:modifyResponse" name="modifyResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="desactivate">
+      <wsdl:input message="tns:desactivate" name="desactivate"></wsdl:input>
+      <wsdl:output message="tns:desactivateResponse" name="desactivateResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="create">
+      <wsdl:input message="tns:create" name="create"></wsdl:input>
+      <wsdl:output message="tns:createResponse" name="createResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consult">
+      <wsdl:input message="tns:consult" name="consult"></wsdl:input>
+      <wsdl:output message="tns:consultResponse" name="consultResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="delete">
+      <wsdl:input message="tns:delete" name="delete"></wsdl:input>
+      <wsdl:output message="tns:deleteResponse" name="deleteResponse"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ReferentielIndividuServiceSoapBinding" type="tns:ReferentielIndividuService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="modify">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="modify">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="modifyResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="desactivate">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="desactivate">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="desactivateResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consult">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consult">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="create">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="create">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="createResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="delete">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="delete">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ReferentielIndividuService">
+    <wsdl:port binding="tns:ReferentielIndividuServiceSoapBinding" name="ReferentielIndividuServiceImplPort">
+      <soap:address location="http://localhost:8080/rfi/services/rfiservice"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8080/rfi/services/rfiservice</con:endpoint></con:endpoints><con:operation isOneWay="false" action="" name="consult" bindingOperationName="consult" type="Request-Response" outputName="consultResponse" inputName="consult" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="ConsultShouldBeOK"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/rfi/services/rfiservice</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.rfi.webservice.composant.agefos.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:consult>
+         <!--Optional:-->
+         <arg0>
+            <!--Optional:-->
+            <NIR>NIR</NIR>
+            <!--Optional:-->
+            <nom>RFI</nom>
+         </arg0>
+      </ws:consult>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.rfi.webservice.composant.agefos.com/ReferentielIndividuService/consult"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="" name="create" bindingOperationName="create" type="Request-Response" outputName="createResponse" inputName="create" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/rfi/services/rfiservice</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.rfi.webservice.composant.agefos.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:create>
+         <!--Optional:-->
+         <arg0>
+            <!--Optional:-->
+            <adresse>?</adresse>
+            <!--Optional:-->
+            <civilite>?</civilite>
+            <!--Optional:-->
+            <codePostal>?</codePostal>
+            <!--Optional:-->
+            <email>?</email>
+            <!--Optional:-->
+            <login>?</login>
+            <!--Optional:-->
+            <NIR>?</NIR>
+            <!--Optional:-->
+            <nomDeNaissance>?</nomDeNaissance>
+            <!--Optional:-->
+            <pays>?</pays>
+            <!--Optional:-->
+            <prenom>?</prenom>
+            <!--Optional:-->
+            <siteAgefosDeCreation>?</siteAgefosDeCreation>
+            <!--Optional:-->
+            <situationProfessionnelle>?</situationProfessionnelle>
+            <!--Optional:-->
+            <telephone>?</telephone>
+            <!--Optional:-->
+            <ville>?</ville>
+         </arg0>
+      </ws:create>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.rfi.webservice.composant.agefos.com/ReferentielIndividuService/create"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="" name="delete" bindingOperationName="delete" type="Request-Response" outputName="deleteResponse" inputName="delete" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/rfi/services/rfiservice</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.rfi.webservice.composant.agefos.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:delete>
+         <!--Optional:-->
+         <arg0/>
+      </ws:delete>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.rfi.webservice.composant.agefos.com/ReferentielIndividuService/delete"/></con:call></con:operation><con:operation isOneWay="false" action="" name="desactivate" bindingOperationName="desactivate" type="Request-Response" outputName="desactivateResponse" inputName="desactivate" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/rfi/services/rfiservice</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.rfi.webservice.composant.agefos.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:desactivate>
+         <!--Optional:-->
+         <arg0/>
+      </ws:desactivate>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.rfi.webservice.composant.agefos.com/ReferentielIndividuService/desactivate"/></con:call></con:operation><con:operation isOneWay="false" action="" name="modify" bindingOperationName="modify" type="Request-Response" outputName="modifyResponse" inputName="modify" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/rfi/services/rfiservice</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.rfi.webservice.composant.agefos.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:modify>
+         <!--Optional:-->
+         <arg0>
+            <!--Optional:-->
+            <adresse>adresse</adresse>
+            <!--Optional:-->
+            <civilite>adresse</civilite>
+            <!--Optional:-->
+            <codePostal>codePostal</codePostal>
+            <!--Optional:-->
+            <email>email</email>
+            <!--Optional:-->
+            <login>login</login>
+            <!--Optional:-->
+            <nomDeNaissance>nomDeNaissance</nomDeNaissance>
+            <!--Optional:-->
+            <pays>pays</pays>
+            <!--Optional:-->
+            <prenom>prenom</prenom>
+            <!--Optional:-->
+            <siteAgefosDeCreation>siteAgefosDeCreation</siteAgefosDeCreation>
+            <!--Optional:-->
+            <situationProfessionnelle>situationProfessionnelle</situationProfessionnelle>
+            <!--Optional:-->
+            <telephone>telephone</telephone>
+            <!--Optional:-->
+            <ville>ville</ville>
+         </arg0>
+      </ws:modify>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.rfi.webservice.composant.agefos.com/ReferentielIndividuService/modify"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>

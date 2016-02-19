@@ -1,0 +1,293 @@
+package fr.agefospme.referentiel.individu.service;
+
+import java.util.Set;
+
+import javax.inject.Inject;
+import javax.validation.ConstraintViolation;
+import javax.validation.Validator;
+
+import org.apache.commons.lang.StringUtils;
+import org.springframework.stereotype.Component;
+
+import fr.agefospme.referentiel.individu.metier.IndividuInfoConsultationNirNomDto;
+import fr.agefospme.referentiel.individu.service.exception.GestionIndividuChampMalFormateException;
+import fr.agefospme.referentiel.individu.service.exception.GestionIndividuChampObligatoireManquantException;
+import fr.agefospme.referentiel.individu.service.exception.GestionIndividuErrorMessageAndCode;
+import fr.agefospme.rfi.domaine.repository.DonneesRFIRepository;
+
+@Component
+public class GestionIndividuValidationServiceImpl implements
+		GestionIndividuValidationService {
+
+	@Inject
+	private Validator validator;
+
+	@Inject
+	private DonneesRFIRepository donneesRFIRepository;
+
+	private static final String CODE_LIST_CIV = "000CIV";
+
+	private static final String CODE_LIST_SITPRO = "SITPRO";
+
+	public void validateInfoCreation(IndividuInfoCreationDto dto)
+			throws GestionIndividuChampMalFormateException,
+			GestionIndividuChampObligatoireManquantException {
+		
+		String civ = dto.getCivilite();
+		
+		
+		validateCivilite(civ);
+
+		String sitPro = dto.getSituationProfessionnelle();
+		
+
+		validateSituationPro(sitPro);
+
+		Set<ConstraintViolation<IndividuInfoCreationDto>> violations = validator
+				.validate(dto);
+
+		checkIndividuInfoCreationDtoViolation(violations);
+
+	}
+
+	private void checkIndividuInfoCreationDtoViolation(
+			Set<ConstraintViolation<IndividuInfoCreationDto>> violations)
+			throws GestionIndividuChampObligatoireManquantException,
+			GestionIndividuChampMalFormateException {
+
+		if (violations.size() >= 1) {
+			ConstraintViolation<IndividuInfoCreationDto> violation = violations
+					.iterator().next();
+
+			if (violation.getInvalidValue() == null) {
+				throw new GestionIndividuChampObligatoireManquantException(
+						GestionIndividuErrorMessageAndCode.CHAMP_OBLIGATOIRE
+								.getCode(),
+						GestionIndividuErrorMessageAndCode.CHAMP_OBLIGATOIRE
+								.getMessage().concat(":")
+								.concat(getViolation(violation)));
+
+			} else {
+
+				throw new GestionIndividuChampMalFormateException(
+						GestionIndividuErrorMessageAndCode.CHAMP_MAL_FORMATE
+								.getCode(),
+						(GestionIndividuErrorMessageAndCode.CHAMP_MAL_FORMATE
+								.getMessage().concat(":")
+								.concat(getViolation(violation))));
+			}
+
+		}
+	}
+
+	private void validateCivilite(String civilite)
+			throws GestionIndividuChampMalFormateException, GestionIndividuChampObligatoireManquantException {
+		
+	
+
+		if (!donneesRFIRepository
+				.findListCodeCivivilite().contains(civilite)) {
+			throw new GestionIndividuChampMalFormateException(
+					GestionIndividuErrorMessageAndCode.CHAMP_MAL_FORMATE
+							.getCode(),
+					(GestionIndividuErrorMessageAndCode.CHAMP_MAL_FORMATE
+							.getMessage().concat(":")
+							.concat("champ civilite invalide avec la valeur:"
+									+ civilite + "valeurs possibles:1,2")));
+		}
+
+	}
+
+	private void validateSituationPro(String sitPro)
+			throws GestionIndividuChampMalFormateException, GestionIndividuChampObligatoireManquantException {
+		
+	
+
+		if (!donneesRFIRepository.findListCodeSituationPro().contains(
+				sitPro)) {
+			throw new GestionIndividuChampMalFormateException(
+					GestionIndividuErrorMessageAndCode.CHAMP_MAL_FORMATE
+							.getCode(),
+					(GestionIndividuErrorMessageAndCode.CHAMP_MAL_FORMATE
+							.getMessage().concat(":")
+							.concat("champ situation professionnelle invalide avec la valeur:"
+									+ sitPro + "valeurs possibles:S,D,P")));
+		}
+
+	}
+
+	public String getViolation(
+			ConstraintViolation<IndividuInfoCreationDto> violation) {
+		if (violation != null) {
+
+			return violation.getPropertyPath() + " avec la valeur: "
+					+ violation.getInvalidValue()
+					+ " indications sur le message: " + violation.getMessage();
+		} else {
+			return StringUtils.EMPTY;
+		}
+	}
+
+	public String getInfoModificationViolation(
+			ConstraintViolation<IndividuInfoModificationDto> violation) {
+		if (violation != null) {
+
+			return violation.getPropertyPath() + " avec la valeur: "
+					+ violation.getInvalidValue()
+					+ " indications sur le message: " + violation.getMessage();
+		} else {
+			return StringUtils.EMPTY;
+		}
+	}
+
+	public String getIdMetierViolation(
+			ConstraintViolation<InfoConsultationIdMetierDto> violation) {
+		if (violation != null) {
+
+			return violation.getPropertyPath() + " avec la valeur: "
+					+ violation.getInvalidValue()
+					+ " indications sur le message: " + violation.getMessage();
+		} else {
+			return StringUtils.EMPTY;
+		}
+	}
+
+	public void setValidator(Validator validator) {
+		this.validator = validator;
+	}
+
+	public void validateInfoConsultationIdMetierDto(
+			InfoConsultationIdMetierDto idMetierDto)
+			throws GestionIndividuChampObligatoireManquantException,
+			GestionIndividuChampMalFormateException {
+		if (idMetierDto == null) {
+			throw new GestionIndividuChampObligatoireManquantException(
+					GestionIndividuErrorMessageAndCode.CHAMP_OBLIGATOIRE
+							.getCode(),
+					GestionIndividuErrorMessageAndCode.CHAMP_OBLIGATOIRE
+							.getMessage());
+		}
+
+		Set<ConstraintViolation<InfoConsultationIdMetierDto>> violations = validator
+				.validate(idMetierDto);
+
+		checkInfoConsultationIdMetierDto(violations);
+
+	}
+
+	private void checkInfoConsultationIdMetierDto(
+			Set<ConstraintViolation<InfoConsultationIdMetierDto>> violations)
+			throws GestionIndividuChampObligatoireManquantException,
+			GestionIndividuChampMalFormateException {
+
+		if (violations.size() >= 1) {
+			ConstraintViolation<InfoConsultationIdMetierDto> violation = violations
+					.iterator().next();
+
+			if (violation.getInvalidValue() == null
+					|| violation.getInvalidValue() == StringUtils.EMPTY) {
+				throw new GestionIndividuChampObligatoireManquantException(
+						GestionIndividuErrorMessageAndCode.CHAMP_OBLIGATOIRE
+								.getCode(),
+						GestionIndividuErrorMessageAndCode.CHAMP_OBLIGATOIRE
+								.getMessage().concat(":")
+								.concat(getIdMetierViolation(violation)));
+
+			} else {
+
+				throw new GestionIndividuChampMalFormateException(
+						GestionIndividuErrorMessageAndCode.CHAMP_MAL_FORMATE
+								.getCode(),
+						(GestionIndividuErrorMessageAndCode.CHAMP_MAL_FORMATE
+								.getMessage().concat(":")
+								.concat(getIdMetierViolation(violation))));
+			}
+
+		}
+
+	}
+
+	public void validateConsultationNirNomDto(
+			IndividuInfoConsultationNirNomDto consultationNirNomDto)
+			throws GestionIndividuChampObligatoireManquantException,
+			GestionIndividuChampMalFormateException {
+
+		Set<ConstraintViolation<IndividuInfoConsultationNirNomDto>> violations = validator
+				.validate(consultationNirNomDto);
+
+		if (violations.size() >= 1) {
+			ConstraintViolation<IndividuInfoConsultationNirNomDto> violation = violations
+					.iterator().next();
+
+			if (violation.getInvalidValue() == null
+					|| violation.getInvalidValue() == StringUtils.EMPTY) {
+				throw new GestionIndividuChampObligatoireManquantException(
+						GestionIndividuErrorMessageAndCode.CHAMP_OBLIGATOIRE
+								.getCode(),
+						GestionIndividuErrorMessageAndCode.CHAMP_OBLIGATOIRE
+								.getMessage().concat(":")
+								.concat(getNirNomViolation(violation)));
+
+			} else {
+
+				throw new GestionIndividuChampMalFormateException(
+						GestionIndividuErrorMessageAndCode.CHAMP_MAL_FORMATE
+								.getCode(),
+						(GestionIndividuErrorMessageAndCode.CHAMP_MAL_FORMATE
+								.getMessage().concat(":")
+								.concat(getNirNomViolation(violation))));
+			}
+
+		}
+
+	}
+
+	private String getNirNomViolation(
+			ConstraintViolation<IndividuInfoConsultationNirNomDto> violation) {
+		if (violation != null) {
+
+			return violation.getPropertyPath() + " avec la valeur: "
+					+ violation.getInvalidValue()
+					+ " indications sur le message: " + violation.getMessage();
+		} else {
+			return StringUtils.EMPTY;
+		}
+	}
+
+	public void validateInfoModification(IndividuInfoModificationDto dto)
+			throws GestionIndividuChampMalFormateException,
+			GestionIndividuChampObligatoireManquantException {
+
+		Set<ConstraintViolation<IndividuInfoModificationDto>> violations = validator
+				.validate(dto);
+
+		if (violations.size() >= 1) {
+			ConstraintViolation<IndividuInfoModificationDto> violation = violations
+					.iterator().next();
+
+			if (violation.getInvalidValue() == null) {
+				throw new GestionIndividuChampObligatoireManquantException(
+						GestionIndividuErrorMessageAndCode.CHAMP_OBLIGATOIRE
+								.getCode(),
+						GestionIndividuErrorMessageAndCode.CHAMP_OBLIGATOIRE
+								.getMessage()
+								.concat(":")
+								.concat(getInfoModificationViolation(violation)));
+
+			} else {
+
+				throw new GestionIndividuChampMalFormateException(
+						GestionIndividuErrorMessageAndCode.CHAMP_MAL_FORMATE
+								.getCode(),
+						(GestionIndividuErrorMessageAndCode.CHAMP_MAL_FORMATE
+								.getMessage().concat(":")
+								.concat(getInfoModificationViolation(violation))));
+			}
+
+		}
+		validateCivilite(dto.getCivilite());
+		validateSituationPro(dto.getSituationProfessionnelle());
+
+	}
+
+}

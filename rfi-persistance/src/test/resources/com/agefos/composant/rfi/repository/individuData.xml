@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+
+	<Individu id="-1" civilite="1" datedenaissance="2000-05-25"
+		email="yko@yahoo.fr" rattachementCPF="true"
+		idmetier="12345678" nir="1234567891234" nomdenaissance="DUPONT"
+		prenom="TAXAN" situationprofessionnelle="P"
+		telephone="0642853096"  adresseLigne1="adresseLîgne1"
+		adresseLigne2="adresseLigne2" adresseLigne3="adresseLigne3"
+		codePostal="codePostal3" ville="ville3"  pays="pays3"  />
+
+
+	<Individu id="-2" civilite="M" datedenaissance="2000-05-25"
+		email="yko@yahoo.fr" rattachementCPF="true"
+		idmetier="12345679" nir="1234567891235" nomdenaissance="DUPONT"
+		prenom="TAXAN" situationprofessionnelle="S"
+		telephone="0642853096"   adresseLigne1="adresseLigne1"
+		adresseLigne2="adresseLigne2" adresseLigne3="adresseLigne3"
+		codePostal="codePostal3" ville="ville3"  pays="pays3" />
+
+
+
+
+</dataset>

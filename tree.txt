@@ -1,0 +1,290 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for fr.agefospme.rfi:rfi-metier:jar:0.0.1-SNAPSHOT
+[WARNING] 'dependencyManagement.dependencies.dependency.exclusions.exclusion.groupId' for org.apache.cxf:cxf-rt-bindings-soap:jar is missing. @ fr.agefospme.rfi:rfi-parent:0.0.1-SNAPSHOT, D:\Profiles\ykodjovi\workspace\rfi-parent\pom.xml, line 129, column 14
+[WARNING] 'dependencyManagement.dependencies.dependency.exclusions.exclusion.artifactId' for org.apache.cxf:cxf-rt-bindings-soap:jar is missing. @ fr.agefospme.rfi:rfi-parent:0.0.1-SNAPSHOT, D:\Profiles\ykodjovi\workspace\rfi-parent\pom.xml, line 130, column 17
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for fr.agefospme.rfi:rfi-persistence:jar:0.0.1-SNAPSHOT
+[WARNING] 'dependencyManagement.dependencies.dependency.exclusions.exclusion.groupId' for org.apache.cxf:cxf-rt-bindings-soap:jar is missing. @ fr.agefospme.rfi:rfi-parent:0.0.1-SNAPSHOT, D:\Profiles\ykodjovi\workspace\rfi-parent\pom.xml, line 129, column 14
+[WARNING] 'dependencyManagement.dependencies.dependency.exclusions.exclusion.artifactId' for org.apache.cxf:cxf-rt-bindings-soap:jar is missing. @ fr.agefospme.rfi:rfi-parent:0.0.1-SNAPSHOT, D:\Profiles\ykodjovi\workspace\rfi-parent\pom.xml, line 130, column 17
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for fr.agefospme.rfi:rfi-ws:war:0.0.1-SNAPSHOT
+[WARNING] 'dependencies.dependency.exclusions.exclusion.groupId' for org.apache.cxf:cxf-rt-bindings-soap:jar is missing. @ fr.agefospme.rfi:rfi-parent:0.0.1-SNAPSHOT, D:\Profiles\ykodjovi\workspace\rfi-parent\pom.xml, line 129, column 14
+[WARNING] 'dependencies.dependency.exclusions.exclusion.artifactId' for org.apache.cxf:cxf-rt-bindings-soap:jar is missing. @ fr.agefospme.rfi:rfi-parent:0.0.1-SNAPSHOT, D:\Profiles\ykodjovi\workspace\rfi-parent\pom.xml, line 130, column 17
+[WARNING] 'dependencyManagement.dependencies.dependency.exclusions.exclusion.groupId' for org.apache.cxf:cxf-rt-bindings-soap:jar is missing. @ fr.agefospme.rfi:rfi-parent:0.0.1-SNAPSHOT, D:\Profiles\ykodjovi\workspace\rfi-parent\pom.xml, line 129, column 14
+[WARNING] 'dependencyManagement.dependencies.dependency.exclusions.exclusion.artifactId' for org.apache.cxf:cxf-rt-bindings-soap:jar is missing. @ fr.agefospme.rfi:rfi-parent:0.0.1-SNAPSHOT, D:\Profiles\ykodjovi\workspace\rfi-parent\pom.xml, line 130, column 17
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for fr.agefospme.rfi:rfi-parent:pom:0.0.1-SNAPSHOT
+[WARNING] 'dependencyManagement.dependencies.dependency.exclusions.exclusion.groupId' for org.apache.cxf:cxf-rt-bindings-soap:jar is missing. @ line 129, column 14
+[WARNING] 'dependencyManagement.dependencies.dependency.exclusions.exclusion.artifactId' for org.apache.cxf:cxf-rt-bindings-soap:jar is missing. @ line 130, column 17
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] rfi-parent
+[INFO] rfi-persistence
+[INFO] rfi composant business layer
+[INFO] rfi-ws
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building rfi-parent 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ rfi-parent ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ rfi-parent ---
+[INFO] fr.agefospme.rfi:rfi-parent:pom:0.0.1-SNAPSHOT
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building rfi-persistence 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] The POM for org.apache.maven.plugins:aven-war-plugin:jar:2.3 is missing, no dependency information available
+[WARNING] Failed to retrieve plugin descriptor for org.apache.maven.plugins:aven-war-plugin:2.3: Plugin org.apache.maven.plugins:aven-war-plugin:2.3 or one of its dependencies could not be resolved: Failure to find org.apache.maven.plugins:aven-war-plugin:jar:2.3 in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ rfi-persistence ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ rfi-persistence ---
+[INFO] fr.agefospme.rfi:rfi-persistence:jar:0.0.1-SNAPSHOT
+[INFO] +- org.dbunit:dbunit:jar:2.4.9:test
+[INFO] |  \- commons-collections:commons-collections:jar:3.2.1:test
+[INFO] +- com.github.springtestdbunit:spring-test-dbunit:jar:1.1.0:test
+[INFO] +- commons-lang:commons-lang:jar:2.6:compile
+[INFO] +- com.google.guava:guava:jar:18.0:compile
+[INFO] +- org.jadira.usertype:usertype.core:jar:3.1.0.CR1:compile
+[INFO] |  \- org.jadira.usertype:usertype.spi:jar:3.1.0.CR1:compile
+[INFO] +- javax.validation:validation-api:jar:1.0.0.GA:compile
+[INFO] +- org.springframework.data:spring-data-jpa:jar:1.3.2.RELEASE:compile
+[INFO] |  \- org.springframework.data:spring-data-commons:jar:1.5.1.RELEASE:compile
+[INFO] +- org.springframework:spring-core:jar:4.0.7.RELEASE:compile
+[INFO] |  \- commons-logging:commons-logging:jar:1.1.3:compile
+[INFO] +- org.springframework:spring-beans:jar:4.0.7.RELEASE:compile
+[INFO] +- org.springframework:spring-context:jar:4.0.7.RELEASE:compile
+[INFO] |  \- org.springframework:spring-expression:jar:4.0.7.RELEASE:compile
+[INFO] +- org.springframework:spring-jdbc:jar:4.0.7.RELEASE:compile
+[INFO] +- org.springframework:spring-aop:jar:4.0.7.RELEASE:compile
+[INFO] |  \- aopalliance:aopalliance:jar:1.0:compile
+[INFO] +- org.springframework:spring-webmvc:jar:4.0.7.RELEASE:compile
+[INFO] |  \- org.springframework:spring-web:jar:4.0.7.RELEASE:compile
+[INFO] +- org.springframework:spring-tx:jar:4.0.7.RELEASE:compile
+[INFO] +- org.springframework:spring-context-support:jar:4.0.7.RELEASE:compile
+[INFO] +- org.springframework:spring-orm:jar:4.0.7.RELEASE:compile
+[INFO] +- org.springframework:spring-oxm:jar:4.0.7.RELEASE:compile
+[INFO] +- commons-dbcp:commons-dbcp:jar:1.4:runtime
+[INFO] |  \- commons-pool:commons-pool:jar:1.5.4:runtime
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.2:compile
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.2:compile
+[INFO] +- org.slf4j:jul-to-slf4j:jar:1.7.2:compile
+[INFO] +- ch.qos.logback:logback-classic:jar:1.0.9:runtime
+[INFO] +- ch.qos.logback:logback-core:jar:1.0.9:runtime
+[INFO] +- rome:rome:jar:1.0:compile
+[INFO] |  \- jdom:jdom:jar:1.0:compile
+[INFO] +- joda-time:joda-time:jar:2.2:compile
+[INFO] +- joda-time:joda-time-hibernate:jar:1.3:compile
+[INFO] +- org.hsqldb:hsqldb:jar:2.2.9:runtime
+[INFO] +- org.hibernate:hibernate-core:jar:4.1.6.Final:compile
+[INFO] |  +- antlr:antlr:jar:2.7.7:compile
+[INFO] |  +- org.jboss.logging:jboss-logging:jar:3.1.0.GA:compile
+[INFO] |  +- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:jar:1.0.0.Final:compile
+[INFO] |  +- dom4j:dom4j:jar:1.6.1:compile
+[INFO] |  +- org.javassist:javassist:jar:3.15.0-GA:compile
+[INFO] |  \- org.hibernate.common:hibernate-commons-annotations:jar:4.0.1.Final:compile
+[INFO] +- org.hibernate:hibernate-entitymanager:jar:4.1.6.Final:compile
+[INFO] +- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.1.Final:compile
+[INFO] +- org.hibernate:hibernate-validator:jar:4.3.0.Final:compile
+[INFO] +- org.hibernate:hibernate-ehcache:jar:4.1.6.Final:compile
+[INFO] +- net.sf.ehcache:ehcache-core:jar:2.6.5:compile
+[INFO] +- org.hibernate:hibernate-envers:jar:4.1.6.Final:compile
+[INFO] +- org.springframework:spring-test:jar:4.0.7.RELEASE:test
+[INFO] +- junit:junit:jar:4.11:test
+[INFO] +- org.hamcrest:hamcrest-library:jar:1.3:test
+[INFO] +- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] +- org.aspectj:aspectjrt:jar:1.7.2:compile
+[INFO] +- org.aspectj:aspectjweaver:jar:1.7.2:runtime
+[INFO] +- org.postgresql:postgresql:jar:9.3-1103-jdbc4:compile
+[INFO] \- org.flywaydb:flyway-core:jar:3.0:compile
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building rfi composant business layer 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ rfi-metier ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ rfi-metier ---
+[INFO] fr.agefospme.rfi:rfi-metier:jar:0.0.1-SNAPSHOT
+[INFO] +- org.springframework:spring-core:jar:4.0.7.RELEASE:compile
+[INFO] |  \- commons-logging:commons-logging:jar:1.1.3:compile
+[INFO] +- org.springframework:spring-beans:jar:4.0.7.RELEASE:compile
+[INFO] +- org.springframework:spring-context:jar:4.0.7.RELEASE:compile
+[INFO] |  +- org.springframework:spring-aop:jar:4.0.7.RELEASE:compile
+[INFO] |  |  \- aopalliance:aopalliance:jar:1.0:compile
+[INFO] |  \- org.springframework:spring-expression:jar:4.0.7.RELEASE:compile
+[INFO] +- org.springframework:spring-context-support:jar:4.0.7.RELEASE:compile
+[INFO] +- javax.inject:javax.inject:jar:1:compile
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.2:compile
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.2:compile
+[INFO] +- org.slf4j:jul-to-slf4j:jar:1.7.2:compile
+[INFO] +- ch.qos.logback:logback-classic:jar:1.0.9:runtime
+[INFO] +- ch.qos.logback:logback-core:jar:1.0.9:runtime
+[INFO] +- org.springframework:spring-test:jar:4.0.7.RELEASE:test
+[INFO] +- junit:junit:jar:4.12:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] +- javax.validation:validation-api:jar:1.0.0.GA:compile
+[INFO] +- joda-time:joda-time:jar:2.2:compile
+[INFO] +- fr.agefospme.rfi:rfi-persistence:jar:0.0.1-SNAPSHOT:compile
+[INFO] |  +- commons-lang:commons-lang:jar:2.6:compile
+[INFO] |  +- com.google.guava:guava:jar:18.0:compile
+[INFO] |  +- org.jadira.usertype:usertype.core:jar:3.1.0.CR1:compile
+[INFO] |  |  \- org.jadira.usertype:usertype.spi:jar:3.1.0.CR1:compile
+[INFO] |  +- org.springframework.data:spring-data-jpa:jar:1.3.2.RELEASE:compile
+[INFO] |  |  \- org.springframework.data:spring-data-commons:jar:1.5.1.RELEASE:compile
+[INFO] |  +- org.springframework:spring-jdbc:jar:4.0.7.RELEASE:compile
+[INFO] |  +- org.springframework:spring-webmvc:jar:4.0.7.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-web:jar:4.0.7.RELEASE:compile
+[INFO] |  +- org.springframework:spring-tx:jar:4.0.7.RELEASE:compile
+[INFO] |  +- org.springframework:spring-orm:jar:4.0.7.RELEASE:compile
+[INFO] |  +- org.springframework:spring-oxm:jar:4.0.7.RELEASE:compile
+[INFO] |  +- commons-dbcp:commons-dbcp:jar:1.4:runtime
+[INFO] |  |  \- commons-pool:commons-pool:jar:1.5.4:runtime
+[INFO] |  +- rome:rome:jar:1.0:compile
+[INFO] |  |  \- jdom:jdom:jar:1.0:compile
+[INFO] |  +- joda-time:joda-time-hibernate:jar:1.3:compile
+[INFO] |  +- org.hsqldb:hsqldb:jar:2.2.9:runtime
+[INFO] |  +- org.hibernate:hibernate-core:jar:4.1.6.Final:compile
+[INFO] |  |  +- antlr:antlr:jar:2.7.7:compile
+[INFO] |  |  +- org.jboss.logging:jboss-logging:jar:3.1.0.GA:compile
+[INFO] |  |  +- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:jar:1.0.0.Final:compile
+[INFO] |  |  +- dom4j:dom4j:jar:1.6.1:compile
+[INFO] |  |  +- org.javassist:javassist:jar:3.15.0-GA:compile
+[INFO] |  |  \- org.hibernate.common:hibernate-commons-annotations:jar:4.0.1.Final:compile
+[INFO] |  +- org.hibernate:hibernate-entitymanager:jar:4.1.6.Final:compile
+[INFO] |  +- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.1.Final:compile
+[INFO] |  +- org.hibernate:hibernate-validator:jar:4.3.0.Final:compile
+[INFO] |  +- org.hibernate:hibernate-ehcache:jar:4.1.6.Final:compile
+[INFO] |  +- net.sf.ehcache:ehcache-core:jar:2.6.5:compile
+[INFO] |  +- org.hibernate:hibernate-envers:jar:4.1.6.Final:compile
+[INFO] |  +- org.aspectj:aspectjrt:jar:1.7.2:compile
+[INFO] |  +- org.aspectj:aspectjweaver:jar:1.7.2:runtime
+[INFO] |  \- org.flywaydb:flyway-core:jar:3.0:compile
+[INFO] +- org.apache.commons:commons-math3:jar:3.4.1:compile
+[INFO] \- org.postgresql:postgresql:jar:9.4-1201-jdbc41:test
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building rfi-ws 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ rfi-ws ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ rfi-ws ---
+[INFO] fr.agefospme.rfi:rfi-ws:war:0.0.1-SNAPSHOT
+[INFO] +- org.apache.cxf:cxf-rt-frontend-jaxws:jar:3.0.4:compile
+[INFO] |  +- xml-resolver:xml-resolver:jar:1.2:compile
+[INFO] |  +- asm:asm:jar:3.3.1:compile
+[INFO] |  +- org.apache.cxf:cxf-core:jar:3.0.4:compile
+[INFO] |  |  +- org.codehaus.woodstox:woodstox-core-asl:jar:4.4.1:compile
+[INFO] |  |  |  \- org.codehaus.woodstox:stax2-api:jar:3.1.4:compile
+[INFO] |  |  \- org.apache.ws.xmlschema:xmlschema-core:jar:2.2.1:compile
+[INFO] |  +- org.apache.cxf:cxf-rt-bindings-xml:jar:3.0.4:compile
+[INFO] |  +- org.apache.cxf:cxf-rt-frontend-simple:jar:3.0.4:compile
+[INFO] |  \- org.apache.cxf:cxf-rt-ws-addr:jar:3.0.4:compile
+[INFO] |     \- org.apache.cxf:cxf-rt-ws-policy:jar:3.0.4:compile
+[INFO] |        \- org.apache.neethi:neethi:jar:3.0.3:compile
+[INFO] +- org.apache.cxf:cxf-rt-transports-http:jar:3.0.4:compile
+[INFO] +- org.apache.cxf:cxf-rt-transports-http-jetty:jar:3.0.4:test
+[INFO] |  +- org.eclipse.jetty:jetty-server:jar:8.1.15.v20140411:compile
+[INFO] |  |  +- org.eclipse.jetty:jetty-continuation:jar:8.1.15.v20140411:compile
+[INFO] |  |  \- org.eclipse.jetty:jetty-http:jar:8.1.15.v20140411:compile
+[INFO] |  |     \- org.eclipse.jetty:jetty-io:jar:8.1.15.v20140411:compile
+[INFO] |  +- org.eclipse.jetty:jetty-security:jar:8.1.15.v20140411:compile
+[INFO] |  \- org.apache.geronimo.specs:geronimo-servlet_3.0_spec:jar:1.0:test
+[INFO] +- org.apache.cxf:cxf-rt-bindings-soap:jar:3.0.4:compile
+[INFO] |  +- org.apache.cxf:cxf-rt-wsdl:jar:3.0.4:compile
+[INFO] |  \- org.apache.cxf:cxf-rt-databinding-jaxb:jar:3.0.4:compile
+[INFO] +- org.apache.cxf:cxf-tools-common:jar:3.0.4:compile
+[INFO] |  +- org.apache.velocity:velocity:jar:1.7:compile
+[INFO] |  |  +- commons-collections:commons-collections:jar:3.2.1:compile
+[INFO] |  |  \- commons-lang:commons-lang:jar:2.4:compile
+[INFO] |  +- wsdl4j:wsdl4j:jar:1.6.3:compile
+[INFO] |  +- com.sun.xml.bind:jaxb-xjc:jar:2.2.11:compile
+[INFO] |  +- com.sun.xml.bind:jaxb-core:jar:2.2.11:compile
+[INFO] |  \- com.sun.xml.bind:jaxb-impl:jar:2.2.11:compile
+[INFO] +- org.springframework:spring-web:jar:4.0.7.RELEASE:compile
+[INFO] |  \- org.springframework:spring-aop:jar:4.0.7.RELEASE:compile
+[INFO] |     \- aopalliance:aopalliance:jar:1.0:compile
+[INFO] +- org.eclipse.jetty:jetty-webapp:jar:8.1.15.v20140411:compile
+[INFO] |  +- org.eclipse.jetty:jetty-xml:jar:8.1.15.v20140411:compile
+[INFO] |  |  \- org.eclipse.jetty:jetty-util:jar:8.1.15.v20140411:compile
+[INFO] |  \- org.eclipse.jetty:jetty-servlet:jar:8.1.15.v20140411:compile
+[INFO] +- org.springframework:spring-core:jar:4.0.7.RELEASE:compile
+[INFO] |  \- commons-logging:commons-logging:jar:1.1.3:compile
+[INFO] +- org.springframework:spring-beans:jar:4.0.7.RELEASE:compile
+[INFO] +- org.springframework:spring-context:jar:4.0.7.RELEASE:compile
+[INFO] |  \- org.springframework:spring-expression:jar:4.0.7.RELEASE:compile
+[INFO] +- org.springframework:spring-context-support:jar:4.0.7.RELEASE:compile
+[INFO] +- javax.inject:javax.inject:jar:1:provided
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.2:compile
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.2:compile
+[INFO] +- org.slf4j:jul-to-slf4j:jar:1.7.2:compile
+[INFO] +- ch.qos.logback:logback-classic:jar:1.0.9:runtime
+[INFO] +- ch.qos.logback:logback-core:jar:1.0.9:runtime
+[INFO] +- org.springframework:spring-test:jar:4.0.7.RELEASE:test
+[INFO] +- junit:junit:jar:4.12:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] +- javax.validation:validation-api:jar:1.0.0.GA:compile
+[INFO] +- net.bull.javamelody:javamelody-core:jar:1.55.0:compile
+[INFO] |  \- org.jrobin:jrobin:jar:1.5.9:compile
+[INFO] +- com.lowagie:itext:jar:2.1.7:compile
+[INFO] \- fr.agefospme.rfi:rfi-metier:jar:0.0.1-SNAPSHOT:compile
+[INFO]    +- joda-time:joda-time:jar:2.2:compile
+[INFO]    +- fr.agefospme.rfi:rfi-persistence:jar:0.0.1-SNAPSHOT:compile
+[INFO]    |  +- com.google.guava:guava:jar:18.0:compile
+[INFO]    |  +- org.jadira.usertype:usertype.core:jar:3.1.0.CR1:compile
+[INFO]    |  |  \- org.jadira.usertype:usertype.spi:jar:3.1.0.CR1:compile
+[INFO]    |  +- org.springframework.data:spring-data-jpa:jar:1.3.2.RELEASE:compile
+[INFO]    |  |  \- org.springframework.data:spring-data-commons:jar:1.5.1.RELEASE:compile
+[INFO]    |  +- org.springframework:spring-jdbc:jar:4.0.7.RELEASE:compile
+[INFO]    |  +- org.springframework:spring-webmvc:jar:4.0.7.RELEASE:compile
+[INFO]    |  +- org.springframework:spring-tx:jar:4.0.7.RELEASE:compile
+[INFO]    |  +- org.springframework:spring-orm:jar:4.0.7.RELEASE:compile
+[INFO]    |  +- org.springframework:spring-oxm:jar:4.0.7.RELEASE:compile
+[INFO]    |  +- commons-dbcp:commons-dbcp:jar:1.4:runtime
+[INFO]    |  |  \- commons-pool:commons-pool:jar:1.5.4:runtime
+[INFO]    |  +- rome:rome:jar:1.0:compile
+[INFO]    |  |  \- jdom:jdom:jar:1.0:compile
+[INFO]    |  +- joda-time:joda-time-hibernate:jar:1.3:compile
+[INFO]    |  +- org.hsqldb:hsqldb:jar:2.2.9:runtime
+[INFO]    |  +- org.hibernate:hibernate-core:jar:4.1.6.Final:compile
+[INFO]    |  |  +- antlr:antlr:jar:2.7.7:compile
+[INFO]    |  |  +- org.jboss.logging:jboss-logging:jar:3.1.0.GA:compile
+[INFO]    |  |  +- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:jar:1.0.0.Final:compile
+[INFO]    |  |  +- dom4j:dom4j:jar:1.6.1:compile
+[INFO]    |  |  +- org.javassist:javassist:jar:3.15.0-GA:compile
+[INFO]    |  |  \- org.hibernate.common:hibernate-commons-annotations:jar:4.0.1.Final:compile
+[INFO]    |  +- org.hibernate:hibernate-entitymanager:jar:4.1.6.Final:compile
+[INFO]    |  +- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.1.Final:compile
+[INFO]    |  +- org.hibernate:hibernate-validator:jar:4.3.0.Final:compile
+[INFO]    |  +- org.hibernate:hibernate-ehcache:jar:4.1.6.Final:compile
+[INFO]    |  +- net.sf.ehcache:ehcache-core:jar:2.6.5:compile
+[INFO]    |  +- org.hibernate:hibernate-envers:jar:4.1.6.Final:compile
+[INFO]    |  +- org.aspectj:aspectjrt:jar:1.7.2:compile
+[INFO]    |  +- org.aspectj:aspectjweaver:jar:1.7.2:runtime
+[INFO]    |  +- org.postgresql:postgresql:jar:9.3-1103-jdbc4:compile
+[INFO]    |  \- org.flywaydb:flyway-core:jar:3.0:compile
+[INFO]    \- org.apache.commons:commons-math3:jar:3.4.1:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] rfi-parent ......................................... SUCCESS [  0.898 s]
+[INFO] rfi-persistence .................................... SUCCESS [  0.382 s]
+[INFO] rfi composant business layer ....................... SUCCESS [  0.129 s]
+[INFO] rfi-ws ............................................. SUCCESS [  0.348 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.030 s
+[INFO] Finished at: 2015-04-21T15:52:29+02:00
+[INFO] Final Memory: 18M/225M
+[INFO] ------------------------------------------------------------------------

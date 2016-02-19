@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:agefospme:commun:Erreur"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="urn:agefospme:commun:Erreur"
+	elementFormDefault="qualified">
+
+    <xs:element name="erreur" type="tns:erreur"></xs:element>
+    
+    <xs:complexType name="erreur">
+    	<sequence>
+    		<element name="code" type="string"></element>
+    		<element name="message" type="string"></element>
+    	</sequence>
+    </xs:complexType>
+    
+    
+</schema>

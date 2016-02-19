@@ -1,0 +1,106 @@
+# Properties file with JDBC and JPA settings.
+#
+# Applied by <context:property-placeholder location="jdbc.properties"/> from
+# various application context XML files (e.g., "applicationContext-*.xml").
+# Targeted at system administrators, to avoid touching the context XML files.
+
+#-------------------------------------------------------------------------------
+# HSQL Settings
+
+h.jdbc.driverClassName=org.hsqldb.jdbcDriver
+h.jdbc.url=jdbc:hsqldb:mem:classup
+h.jdbc.username=sa
+h.jdbc.password=
+# Property that determines which database to use with an AbstractJpaVendorAdapter
+h.jpa.database=HSQL
+
+# Properties that control the population of schema and data for a new data source
+#jdbc.initLocation=classpath:db/hsqldb/initDB.sql
+#jdbc.dataLocation=classpath:db/hsqldb/populateDB.sql
+
+
+jpa.showSql=true
+
+jpa.generateDdl=true
+
+#-------------------------------------------------------------------------------
+# MySQL Settings
+
+my.jdbc.driverClassName=com.mysql.jdbc.Driver
+my.jdbc.url=jdbc:mysql://localhost:3306/rfi-db
+my.jdbc.username=root
+my.jdbc.password=
+
+# Properties that control the population of schema and data for a new data source
+#jdbc.initLocation=classpath:db/mysql/initDB.txt
+#jdbc.dataLocation=classpath:db/mysql/populateDB.txt
+
+# Property that determines which Hibernate dialect to use
+# (only applied with "applicationContext-hibernate.xml")
+#hibernate.dialect=org.hibernate.dialect.MySQLDialect
+
+# Property that determines which database to use with an AbstractJpaVendorAdapter
+my.jpa.database=MYSQL
+
+#-----------------------------------------------------------------------POSTGRESQL
+
+
+
+jdbc.driverClassName=org.postgresql.Driver
+jdbc.url=jdbc:postgresql://localhost:5432/rfi-db
+jdbc.username=postgres
+jdbc.password=root
+
+# Properties that control the population of schema and data for a new data source
+#jdbc.initLocation=classpath:db/mysql/initDB.sql
+#jdbc.dataLocation=classpath:db/mysql/populateDB.sql
+
+# Property that determines which Hibernate dialect to use
+# (only applied with "applicationContext-hibernate.xml")
+hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+
+# Property that determines which database to use with an AbstractJpaVendorAdapter
+jpa.database=POSTGRESQL
+
+
+
+# Properties that control SQLite DB
+jdbc.url.siteA=jdbc:postgresql://localhost:5432/petclinic2
+jdbc.url.siteB=jdbc:postgresql://localhost:5432/petclinic-replica
+
+
+
+proto.jdbc.driverClassName=org.sqlite.JDBC
+proto.jdbc.url=jdbc:sqlite:/Users/Ametepe/Desktop/sqlitedb/classup.sqlite
+proto.jdbc.username=test-role-cnx
+proto.jdbc.password=test-role-cnx
+
+# Properties that control the population of schema and data for a new data source
+#jdbc.initLocation=classpath:db/mysql/initDB.sql
+#jdbc.dataLocation=classpath:db/mysql/populateDB.sql
+
+# Property that determines which Hibernate dialect to use
+# (only applied with "applicationContext-hibernate.xml") : https://github.com/gwenn/sqlite-dialect/blob/master/src/main/java/org/hibernate/dialect/SQLiteDialect.java
+proto.hibernate.dialect=org.hibernate.dialect.SQLiteDialect
+
+# Property that determines which database to use with an AbstractJpaVendorAdapter
+proto.jpa.database=SQLITE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

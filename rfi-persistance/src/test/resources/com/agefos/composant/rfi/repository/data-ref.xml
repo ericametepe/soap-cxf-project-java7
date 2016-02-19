@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+<DonneesRFI id="-1" codeListe="000CIV" code="1"  libelle="M" libelleLong="Monsieur"/>
+<DonneesRFI id="-2" codeListe="000CIV" code="2"  libelle="F" libelleLong="Madame"/>
+<DonneesRFI id="-3" codeListe="SITPRO" code="S"  libelle="Salarié" libelleLong="Test long"/>
+<DonneesRFI id="-4" codeListe="SITPRO" code="D"  libelle="Demandeur d’emploi" libelleLong=" Demandeur long"/>
+<DonneesRFI id="-5" codeListe="SITPRO" code="P"  libelle="Chômage partiel" libelleLong=" Chômage partiel long"/>
+</dataset>

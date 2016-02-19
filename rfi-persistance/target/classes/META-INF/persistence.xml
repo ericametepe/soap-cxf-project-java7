@@ -1,0 +1,24 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	version="1.0">
+	<persistence-unit name="rfi-pu" transaction-type="RESOURCE_LOCAL">
+
+		<jta-data-source>java:jboss/datasources/rfiDS</jta-data-source>
+
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>fr.agefospme.rfi.domaine.UtilisateurAgefos</class>
+		<class>fr.agefospme.rfi.domaine.Adresse</class>
+		<class>fr.agefospme.rfi.domaine.IndividuHistorique</class>
+		<class>fr.agefospme.rfi.domaine.Individu</class>
+		<class>fr.agefospme.rfi.domaine.DonneesRFI</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"></property>
+			<property name="hibernate.cache.use_second_level_cache"
+				value="true" />
+			<property name="hibernate.cache.provider_class"
+				value="net.sf.ehcache.hibernate.SingletonEhCacheProvider" />
+			<property name="hibernate.cache.region.factory_class"
+				value="org.hibernate.cache.ehcache.EhCacheRegionFactory"/>
+		</properties>
+	</persistence-unit>
+</persistence>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="urn:agefospme:commun:ContexteUtilisateur" xmlns:tns="urn:agefospme:commun:ContexteUtilisateur"
+	elementFormDefault="qualified">
+	
+    <xs:element name="contexteUtilisateur" type="tns:contexteUtilisateur"></xs:element>
+	<xs:complexType name="contexteUtilisateur">
+		<xs:sequence>
+			<xs:element name="login" type="string" minOccurs="1" maxOccurs="1" ></xs:element>
+			<xs:element name="codeSite" type="string" minOccurs="1" maxOccurs="1"></xs:element>
+			<xs:element name="applicationOrigine" type="string" minOccurs="1" maxOccurs="1"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+
+</schema>

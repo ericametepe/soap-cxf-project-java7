@@ -1,0 +1,69 @@
+[INFO] Scanning for projects...
+[WARNING] The POM for org.apache.maven.plugins:aven-war-plugin:jar:2.3 is missing, no dependency information available
+[WARNING] Failed to retrieve plugin descriptor for org.apache.maven.plugins:aven-war-plugin:2.3: Plugin org.apache.maven.plugins:aven-war-plugin:2.3 or one of its dependencies could not be resolved: Failure to find org.apache.maven.plugins:aven-war-plugin:jar:2.3 in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building rfi-persistence 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] The POM for org.apache.maven.plugins:aven-war-plugin:jar:2.3 is missing, no dependency information available
+[WARNING] Failed to retrieve plugin descriptor for org.apache.maven.plugins:aven-war-plugin:2.3: Plugin org.apache.maven.plugins:aven-war-plugin:2.3 or one of its dependencies could not be resolved: Failure to find org.apache.maven.plugins:aven-war-plugin:jar:2.3 in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced
+[INFO] 
+[INFO] >>> maven-dependency-plugin:2.8:analyze (default-cli) > test-compile @ rfi-persistence >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ rfi-persistence ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ rfi-persistence ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ rfi-persistence ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ rfi-persistence ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to D:\Profiles\ykodjovi\workspace\rfi-parent\rfi-persistance\target\test-classes
+[INFO] 
+[INFO] <<< maven-dependency-plugin:2.8:analyze (default-cli) < test-compile @ rfi-persistence <<<
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:analyze (default-cli) @ rfi-persistence ---
+[WARNING] Unused declared dependencies found:
+[WARNING]    org.dbunit:dbunit:jar:2.4.9:test
+[WARNING]    com.google.guava:guava:jar:18.0:compile
+[WARNING]    org.jadira.usertype:usertype.core:jar:3.1.0.CR1:compile
+[WARNING]    org.springframework:spring-core:jar:4.0.7.RELEASE:compile
+[WARNING]    org.springframework:spring-jdbc:jar:4.0.7.RELEASE:compile
+[WARNING]    org.springframework:spring-aop:jar:4.0.7.RELEASE:compile
+[WARNING]    org.springframework:spring-webmvc:jar:4.0.7.RELEASE:compile
+[WARNING]    org.springframework:spring-tx:jar:4.0.7.RELEASE:compile
+[WARNING]    org.springframework:spring-context-support:jar:4.0.7.RELEASE:compile
+[WARNING]    org.springframework:spring-orm:jar:4.0.7.RELEASE:compile
+[WARNING]    org.springframework:spring-oxm:jar:4.0.7.RELEASE:compile
+[WARNING]    commons-dbcp:commons-dbcp:jar:1.4:runtime
+[WARNING]    org.slf4j:jcl-over-slf4j:jar:1.7.2:compile
+[WARNING]    org.slf4j:slf4j-api:jar:1.7.2:compile
+[WARNING]    org.slf4j:jul-to-slf4j:jar:1.7.2:compile
+[WARNING]    ch.qos.logback:logback-classic:jar:1.0.9:runtime
+[WARNING]    ch.qos.logback:logback-core:jar:1.0.9:runtime
+[WARNING]    rome:rome:jar:1.0:compile
+[WARNING]    joda-time:joda-time-hibernate:jar:1.3:compile
+[WARNING]    org.hsqldb:hsqldb:jar:2.2.9:runtime
+[WARNING]    org.hibernate:hibernate-core:jar:4.1.6.Final:compile
+[WARNING]    org.hibernate:hibernate-entitymanager:jar:4.1.6.Final:compile
+[WARNING]    org.hibernate:hibernate-validator:jar:4.3.0.Final:compile
+[WARNING]    org.hibernate:hibernate-ehcache:jar:4.1.6.Final:compile
+[WARNING]    net.sf.ehcache:ehcache-core:jar:2.6.5:compile
+[WARNING]    org.hamcrest:hamcrest-library:jar:1.3:test
+[WARNING]    org.hamcrest:hamcrest-core:jar:1.3:test
+[WARNING]    org.aspectj:aspectjrt:jar:1.7.2:compile
+[WARNING]    org.aspectj:aspectjweaver:jar:1.7.2:runtime
+[WARNING]    org.postgresql:postgresql:jar:9.4-1201-jdbc41:provided
+[WARNING]    org.flywaydb:flyway-core:jar:3.0:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.159 s
+[INFO] Finished at: 2015-03-24T14:52:41+01:00
+[INFO] Final Memory: 23M/227M
+[INFO] ------------------------------------------------------------------------

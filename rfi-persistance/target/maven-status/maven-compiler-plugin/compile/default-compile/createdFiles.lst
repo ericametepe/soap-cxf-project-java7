@@ -1,0 +1,13 @@
+fr/agefospme/rfi/domaine/DonneesRFI.class
+fr/agefospme/rfi/domaine/repository/IndividuDao.class
+fr/agefospme/rfi/domaine/UtilisateurAgefos.class
+fr/agefospme/rfi/domaine/BaseEntity.class
+fr/agefospme/rfi/domaine/repository/IndividuHistoriqueRepository.class
+fr/agefospme/rfi/domaine/Adresse.class
+fr/agefospme/rfi/domaine/Individu.class
+fr/agefospme/rfi/domaine/repository/IndividuDaoImpl.class
+fr/agefospme/rfi/domaine/repository/IndividuRepository.class
+fr/agefospme/rfi/domaine/TypeEvenement.class
+fr/agefospme/rfi/domaine/IndividuHistorique.class
+fr/agefospme/rfi/domaine/repository/DonneesRFIRepository.class
+fr/agefospme/rfi/domaine/SituationProfessionnelle.class

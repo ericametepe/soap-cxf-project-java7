@@ -1,0 +1,377 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>fr.agefospme.rfi</groupId>
+		<artifactId>rfi-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>rfi-ws</artifactId>
+	<packaging>war</packaging>
+
+	<properties>
+
+		<!-- Generic properties -->
+		<java.version>1.7</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<ha.jdbc.version>3.0.3</ha.jdbc.version>
+		<activeMQVersion>5.7.0</activeMQVersion>
+		<aspectJVersion>1.7.2</aspectJVersion>
+		<commonsLangVersion>2.6</commonsLangVersion>
+		<ehcacheVersion>2.7.4</ehcacheVersion>
+		<ehcacheJCacheVersion>1.4.0-beta1</ehcacheJCacheVersion>
+		<h2Version>1.4.182</h2Version>
+		<hamcrestVersion>1.3</hamcrestVersion>
+		<hibernateVersion>4.1.6.Final</hibernateVersion>
+		<hibernateEntityManagerVersion>4.0.1.Final</hibernateEntityManagerVersion>
+		<hibernateValidatorVersion>5.0.1.Final</hibernateValidatorVersion>
+		<jspApiVersion>2.1</jspApiVersion>
+		<jspElVersion>2.2.4</jspElVersion>
+		<jstlVersion>1.2</jstlVersion>
+		<junitVersion>4.11</junitVersion>
+		<log4jVersion>1.2.14</log4jVersion>
+		<mockitoVersion>1.9.5</mockitoVersion>
+		<servletApiVersion>3.1.0</servletApiVersion>
+		<slf4jVersion>1.7.5</slf4jVersion>
+
+
+		<guavaVersion>18.0</guavaVersion>
+
+
+
+		<!-- Hibernate / JPA -->
+		<hibernate-jpa.version>1.0.1.Final</hibernate-jpa.version>
+
+		<!-- Bean validation -->
+		<validation.version>1.0.0.GA</validation.version>
+		<hibernate-validator.version>4.3.0.Final</hibernate-validator.version>
+
+		<!-- Database access -->
+		<commons-dbcp.version>1.4</commons-dbcp.version>
+		<ehcache.version>2.6.5</ehcache.version>
+		<hsqldb.version>2.2.9</hsqldb.version>
+
+
+		<!-- Logging -->
+		<logback.version>1.0.9</logback.version>
+		<slf4j.version>1.7.2</slf4j.version>
+
+		<!-- RSS -->
+
+		<!-- Test -->
+
+		<!-- Dates -->
+		<jodatime-hibernate.version>1.3</jodatime-hibernate.version>
+		<jodatime-jsptags.version>1.1.1</jodatime-jsptags.version>
+		<jodatime.version>2.2</jodatime.version>
+		<jadira-usertype-core.version>3.1.0.CR1</jadira-usertype-core.version>
+
+
+
+
+
+	</properties>
+
+	<dependencies>
+		<!-- CXF -->
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-frontend-jaxws</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>com.sun.xml.bind</groupId>
+					<artifactId>jaxb-impl</artifactId>
+				</exclusion>
+
+				<exclusion>
+					<groupId>com.sun.xml.bind</groupId>
+					<artifactId>jaxb-core</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-transports-http</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-transports-http-jetty</artifactId>
+		</dependency>
+		<!-- XSD validation -->
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-bindings-soap</artifactId>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-tools-common</artifactId>
+			<version>${cxf.version}</version>
+		</dependency>
+
+
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-webapp</artifactId>
+		</dependency>
+
+
+		<!-- SPRING, SPRING, SPRINGITY SPRING -->
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+		</dependency>
+
+		<!-- used for EhCacheCacheManager -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>quartz</groupId>
+					<artifactId>quartz</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<!-- -->
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+
+
+
+
+		<!-- Logging with SLF4J & LogBack -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jcl-over-slf4j</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jul-to-slf4j</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-core</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+
+
+		<!-- Test Artifacts -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- Validation -->
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>${validation.version}</version>
+		</dependency>
+
+
+
+
+
+
+
+
+		<dependency>
+			<groupId>net.bull.javamelody</groupId>
+			<artifactId>javamelody-core</artifactId>
+		</dependency>
+		<!-- itext, option to add PDF export -->
+		<dependency>
+			<groupId>com.lowagie</groupId>
+			<artifactId>itext</artifactId>
+			<exclusions>
+				<exclusion>
+					<artifactId>bcmail-jdk14</artifactId>
+					<groupId>bouncycastle</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>bcprov-jdk14</artifactId>
+					<groupId>bouncycastle</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>bctsp-jdk14</artifactId>
+					<groupId>bouncycastle</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+
+		<dependency>
+			<groupId>fr.agefospme.rfi</groupId>
+			<artifactId>rfi-metier</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+
+
+
+	</dependencies>
+
+	<!-- all Maven plugin versions are mentioned in order to guarantee the build 
+		reproducibility in the long term -->
+	<build>
+
+		<defaultGoal>install</defaultGoal>
+
+
+		<plugins>
+			<!-- CXF Maven plugin -->
+			<plugin>
+				<groupId>org.apache.cxf</groupId>
+				<artifactId>cxf-codegen-plugin</artifactId>
+				<version>${cxf.version}</version>
+				<executions>
+					<execution>
+						<id>generate-sources</id>
+						<phase>generate-sources</phase>
+						<configuration>
+							<sourceRoot>${project.build.directory}/generated/cxf</sourceRoot>
+							<wsdlOptions>
+								<wsdlOption>
+									<wsdl>${basedir}/wsdl/GestionIndividu_1.0.wsdl</wsdl>
+									<extraargs>
+										<extraarg>-verbose</extraarg>
+										<extraarg>-p</extraarg>
+										<extraarg>urn:agefospme:rfi:GestionIndividu:1.0=fr.agefospme.rfi.ws.gestionindividu.gen</extraarg>
+										<!-- -->
+										<extraarg>-impl</extraarg>
+										<extraarg>-exsh</extraarg>
+										<extraarg>true</extraarg>
+									</extraargs>
+									<frontEnd>jaxws21</frontEnd>
+									<faultSerialVersionUID>1</faultSerialVersionUID>
+								</wsdlOption>
+
+							</wsdlOptions>
+
+						</configuration>
+						<goals>
+							<goal>wsdl2java</goal>
+						</goals>
+					</execution>
+				</executions>
+				<dependencies>
+
+				</dependencies>
+			</plugin>
+
+
+
+			<plugin>
+				<groupId>org.jboss.as.plugins</groupId>
+				<artifactId>jboss-as-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.0</version>
+				<configuration>
+					<compilerArguments>
+						<Xlint />
+					</compilerArguments>
+					<verbose>true</verbose>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+					<showWarnings>true</showWarnings>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<!-- <configuration> -->
+				<!-- <includes> -->
+				<!-- <include>**/*Tests.java</include> -->
+				<!-- </includes> -->
+				<!-- </configuration> -->
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.3</version>
+				<configuration>
+					<warName>rfi</warName>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.8</version>
+				<executions>
+					<execution>
+						<id>install</id>
+						<phase>install</phase>
+						<goals>
+							<goal>sources</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+				</configuration>
+			</plugin>
+
+
+		</plugins>
+		<finalName>rfi</finalName>
+
+	</build>
+
+
+
+
+
+
+</project>
